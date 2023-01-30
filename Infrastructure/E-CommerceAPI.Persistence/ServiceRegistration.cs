@@ -23,16 +23,18 @@ namespace E_CommerceAPI.Persistence
 
             // Configuration sınıfını ben olusturdum app.jsondan veri alabilmek için
             serviceCollection.AddDbContext<ECommerceAPIDbContext>(options => 
-                options.UseNpgsql(Configuration.ConnectionString), ServiceLifetime.Singleton);
+                options.UseNpgsql(Configuration.ConnectionString));
 
-            serviceCollection.AddSingleton<ICustomerReadRepository, CustomerReadRepository>();
-            serviceCollection.AddSingleton<ICustomerWriteRepository, CustomerWriteRepository>();
+            //AddDbContexin lifecyl'ı scope oldugundan scope ile devam edelim -> scope her requeste ozel injection yapar ve bitince dispose eder
 
-            serviceCollection.AddSingleton<IOrderReadRepository, OrderReadRepository>();
-            serviceCollection.AddSingleton<IOrderWriteRepository, OrderWriteRepository>();
+            serviceCollection.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
+            serviceCollection.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
 
-            serviceCollection.AddSingleton<IProductReadRepository, ProductReadRepository>();
-            serviceCollection.AddSingleton<IProductWriteRepository, ProductWriteRepository>();
+            serviceCollection.AddScoped<IOrderReadRepository, OrderReadRepository>();
+            serviceCollection.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
+
+            serviceCollection.AddScoped<IProductReadRepository, ProductReadRepository>();
+            serviceCollection.AddScoped<IProductWriteRepository, ProductWriteRepository>();
 
         }
     }

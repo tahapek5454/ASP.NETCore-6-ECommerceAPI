@@ -18,7 +18,7 @@ namespace E_CommerceAPI.API.Controllers
         }
 
         [HttpGet]
-        public async void Get()
+        public async Task Get()
         {
             await _productWriteRepository.AddRangeAsync(
                     new()
