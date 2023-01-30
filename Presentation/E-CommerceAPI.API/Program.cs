@@ -1,6 +1,9 @@
+using E_CommerceAPI.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container. -> kendi injectionlarimizi metodu extension ederek dahil ettik
+builder.Services.AddPersistenceService();
 
 
 builder.Services.AddControllers();
