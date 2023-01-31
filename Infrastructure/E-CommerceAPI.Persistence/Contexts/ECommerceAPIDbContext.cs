@@ -1,4 +1,5 @@
 ﻿using E_CommerceAPI.Domain.Entities;
+using E_CommerceAPI.Domain.Entities.Common;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,30 @@ namespace E_CommerceAPI.Persistence.Contexts
         // Tablolarimizi eslestirdik class larimizla
         public DbSet<Product> Products { get; set; }
         public DbSet<Customer> Customers { get; set; }
-        public DbSet<Order> Orders { get; set; }    
+        public DbSet<Order> Orders { get; set; }
+
+        // bizim DbContex islemleri için olusacak interceptor -> model olusurke otomarik createDate' deger aticaz vb.
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            // ChangeTracker : Entityler uzerinde yapilan degisikliklerin ya da yeni eklenen verinin yakalanmasini saglayan propertydir
+            //Track edilen verileri yakalyip elde etmemizi sagliyor
+
+            //ChangeTrackerdan BaseEntity tipindeki datalar yakaladım
+            var datas = ChangeTracker.Entries<BaseEntity>();
+
+            // her bir data icersinde gezerek datanın statini kontrol ettik ve ona gore saveden once araya girip update ya da create data'ya deger verdik
+            // not: _ olması benim return den gelen degeri istemiyor oldugumu belirtmek bellekte yer harcanmiyor boylelikle
+            foreach (var data in datas)
+            {
+                _ = data.State switch
+                {
+                    EntityState.Added => data.Entity.CreateDate = DateTime.UtcNow,
+                    EntityState.Modified => data.Entity.UpdateDate= DateTime.UtcNow,
+                };
+            }
+
+            return await base.SaveChangesAsync(cancellationToken);
+        }
+
     }
 }
