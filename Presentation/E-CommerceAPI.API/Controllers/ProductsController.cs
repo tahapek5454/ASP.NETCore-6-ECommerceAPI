@@ -1,4 +1,5 @@
 ﻿using E_CommerceAPI.Application.Repositories.ProductRepository;
+using E_CommerceAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,27 +21,30 @@ namespace E_CommerceAPI.API.Controllers
         [HttpGet]
         public async Task Get()
         {
-            await _productWriteRepository.AddRangeAsync(
-                    new()
-                    {
-                        new()
-                        {
-                            CreateDate= DateTime.UtcNow,
-                            Id= Guid.NewGuid(),
-                            Name = "Bardak",
-                            Price= 5,
-                            Stock = 5
-                        },
-                        new()
-                        {
-                            CreateDate= DateTime.UtcNow,
-                            Id= Guid.NewGuid(),
-                            Name = "Tabak",
-                            Price= 5,
-                            Stock = 5
-                        }
-                    }
-                );
+            //await _productWriteRepository.AddRangeAsync(
+            //        new()
+            //        {
+            //            new()
+            //            {
+            //                CreateDate= DateTime.UtcNow,
+            //                Id= Guid.NewGuid(),
+            //                Name = "Bardak",
+            //                Price= 5,
+            //                Stock = 5
+            //            },
+            //            new()
+            //            {
+            //                CreateDate= DateTime.UtcNow,
+            //                Id= Guid.NewGuid(),
+            //                Name = "Tabak",
+            //                Price= 5,
+            //                Stock = 5
+            //            }
+            //        }
+            //    );
+
+            Product p = await _productReadRepository.GetByIdAsync("bad008d3-a20e-408c-a7e9-08f1abd81610", false);
+            p.Name = "mehmet";
 
             var count = await _productWriteRepository.SaveAsync();
         }

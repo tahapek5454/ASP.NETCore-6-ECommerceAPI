@@ -12,10 +12,10 @@ namespace E_CommerceAPI.Application.Repositories
         where T : BaseEntity 
     {
         // List deseydik inmemory icerirdi, Sorgu uzerinde calismak için IQueryavle kullanacgiz
-        IQueryable<T> GetAll();
-        IQueryable<T> GetWhere(Expression<Func<T, bool>> method);
-        Task<T> GetSingleAsync(Expression<Func<T, bool>> method);
-        Task<T> GetByIdAsync(string id);
+        IQueryable<T> GetAll(bool tracking = true);
+        IQueryable<T> GetWhere(Expression<Func<T, bool>> method, bool tracking = true);
+        Task<T> GetSingleAsync(Expression<Func<T, bool>> method, bool tracking = true);
+        Task<T> GetByIdAsync(string id, bool tracking = true);
 
     }
    
