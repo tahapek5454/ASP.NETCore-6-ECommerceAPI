@@ -19,17 +19,10 @@ namespace E_CommerceAPI.API.Controllers
         }
 
         [HttpGet]
-        public async Task Get()
+        public async Task<IActionResult> Get()
         {
 
-            Product p = await _productReadRepository.GetByIdAsync("8b05059a-d78c-4f97-918d-4b017582a851");
-            p.Name = "corap";
-
-            _productWriteRepository.Update(p);
-
-
-
-            var count = await _productWriteRepository.SaveAsync();
+            return Ok("Merahaba");
         }
     }
 }
