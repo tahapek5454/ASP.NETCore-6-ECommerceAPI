@@ -1,4 +1,7 @@
+using E_CommerceAPI.Application.Validators.Products;
+using E_CommerceAPI.Infrastructure.Filters;
 using E_CommerceAPI.Persistence;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +20,16 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
 
 
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>()) // -> son olarak kendi filterýmýz tanýmlattýk
+    .AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>()) // -> aslýnda validation için bu yeterli
+    //contolleýmýza gelen verileri olustudgumuz validatorlar kontrol et diyoruz
+    // kendisi reflection ile calisma aninda kontrol islemleri yapýyor .NetCore Gucu ->
+    // VERÝLEN sinifin bulundugu assempleddki tum validatorlarý kendisi ekinlestiricek bizde application'ý tarif eden bir sýnýf koyduk
+    .ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
+    // Controller normalde ustte tanýttýmýz validatorlarý kullnarak kendi filterýndan gecirir ve gerekli davranýsý sergiler
+    // biz yapmýs oldugumuz hamleyle kendi filterýmýzý olusturuyoruz senin filterýný eziyoruz dedik egitim amacli
+                                                                                                            
+                                                                                                                    
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
