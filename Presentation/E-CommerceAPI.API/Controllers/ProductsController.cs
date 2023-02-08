@@ -14,10 +14,15 @@ namespace E_CommerceAPI.API.Controllers
         private readonly IProductReadRepository _productReadRepository;
         private readonly IProductWriteRepository _productWriteRepository;
 
-        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository)
+        // wwwroot un pathine ulasmak için -> statik filelara erisim saglar
+        private readonly IWebHostEnvironment _webHostEnvironment;
+
+
+        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository, IWebHostEnvironment webHostEnvironment)
         {
             _productReadRepository = productReadRepository;
             _productWriteRepository = productWriteRepository;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [HttpGet]
@@ -58,6 +63,35 @@ namespace E_CommerceAPI.API.Controllers
             });
 
             _ = await _productWriteRepository.SaveAsync();
+
+            return Ok();
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Upload()
+        {
+            // wwwroot/resource/product-image
+            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "resource\\product-images");
+
+            Random r = new Random();
+            
+            // frontend'de FormData olarak yolladigmiz için file lari request içersinden çekiyoruz
+            foreach (IFormFile file in Request.Form.Files)
+            {
+                string fullPath = Path.Combine(uploadPath, $"{r.Next()}{Path.GetExtension(file.FileName)}");
+
+                //Bu yol yoksa olustur
+                if(!Directory.Exists(fullPath))
+                    Directory.CreateDirectory(fullPath);
+
+                // olusan pathe yukleme islemi
+                using FileStream fileStream = new(fullPath, FileMode.Create, FileAccess.Write, FileShare.None, 1024*1024, useAsync:false);
+                await file.CopyToAsync(fileStream);
+
+                //temizlik
+                await fileStream.FlushAsync();
+
+            }
 
             return Ok();
         }
