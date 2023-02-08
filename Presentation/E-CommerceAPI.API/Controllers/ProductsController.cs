@@ -73,16 +73,16 @@ namespace E_CommerceAPI.API.Controllers
             // wwwroot/resource/product-image
             string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "resource\\product-images");
 
+            //Bu yol yoksa olustur
+            if (!Directory.Exists(uploadPath))
+                Directory.CreateDirectory(uploadPath);
+
             Random r = new Random();
             
             // frontend'de FormData olarak yolladigmiz için file lari request içersinden çekiyoruz
             foreach (IFormFile file in Request.Form.Files)
             {
                 string fullPath = Path.Combine(uploadPath, $"{r.Next()}{Path.GetExtension(file.FileName)}");
-
-                //Bu yol yoksa olustur
-                if(!Directory.Exists(fullPath))
-                    Directory.CreateDirectory(fullPath);
 
                 // olusan pathe yukleme islemi
                 using FileStream fileStream = new(fullPath, FileMode.Create, FileAccess.Write, FileShare.None, 1024*1024, useAsync:false);
