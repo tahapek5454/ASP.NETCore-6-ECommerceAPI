@@ -1,5 +1,6 @@
 ﻿using E_CommerceAPI.Application.Repositories.ProductRepository;
 using E_CommerceAPI.Application.RequestParameters;
+using E_CommerceAPI.Application.Services;
 using E_CommerceAPI.Application.ViewModels.Products;
 using E_CommerceAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
@@ -13,16 +14,18 @@ namespace E_CommerceAPI.API.Controllers
     {
         private readonly IProductReadRepository _productReadRepository;
         private readonly IProductWriteRepository _productWriteRepository;
+        private readonly IFileService _fileService;
 
         // wwwroot un pathine ulasmak için -> statik filelara erisim saglar
         private readonly IWebHostEnvironment _webHostEnvironment;
 
 
-        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository, IWebHostEnvironment webHostEnvironment)
+        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository, IWebHostEnvironment webHostEnvironment, IFileService fileService)
         {
             _productReadRepository = productReadRepository;
             _productWriteRepository = productWriteRepository;
             _webHostEnvironment = webHostEnvironment;
+            _fileService = fileService;
         }
 
         [HttpGet]
@@ -70,28 +73,7 @@ namespace E_CommerceAPI.API.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Upload()
         {
-            // wwwroot/resource/product-image
-            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "resource\\product-images");
-
-            //Bu yol yoksa olustur
-            if (!Directory.Exists(uploadPath))
-                Directory.CreateDirectory(uploadPath);
-
-            Random r = new Random();
-            
-            // frontend'de FormData olarak yolladigmiz için file lari request içersinden çekiyoruz
-            foreach (IFormFile file in Request.Form.Files)
-            {
-                string fullPath = Path.Combine(uploadPath, $"{r.Next()}{Path.GetExtension(file.FileName)}");
-
-                // olusan pathe yukleme islemi
-                using FileStream fileStream = new(fullPath, FileMode.Create, FileAccess.Write, FileShare.None, 1024*1024, useAsync:false);
-                await file.CopyToAsync(fileStream);
-
-                //temizlik
-                await fileStream.FlushAsync();
-
-            }
+            await _fileService.UploadAsync("resource\\product-images", Request.Form.Files);
 
             return Ok();
         }
