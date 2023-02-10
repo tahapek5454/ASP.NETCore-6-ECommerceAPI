@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Infrastructure.Services
 {
-    public class FileService : IFileService
+    public class FileServiceAlternative : IFileServiceAlternative
     {
 
         private int Counter { get; set; } = 1;
 
         // bize wwwroot un yolunu ve kontrolunu saglayacak
         readonly IWebHostEnvironment _webHostEnviroment;
-        public FileService(IWebHostEnvironment webHostEnviroment)
+        public FileServiceAlternative(IWebHostEnvironment webHostEnviroment)
         {
             _webHostEnviroment = webHostEnviroment;
         }

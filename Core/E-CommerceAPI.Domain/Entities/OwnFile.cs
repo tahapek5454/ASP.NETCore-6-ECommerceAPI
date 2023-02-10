@@ -12,6 +12,7 @@ namespace E_CommerceAPI.Domain.Entities
     {
         public string FileName { get; set; }
         public string Path { get; set; }
+        public string Storage { get; set; }
 
         // baseEntityden gelen bir seyi bu tabloda istemiyorsak ovveride edip notMapped diyoruz
         [NotMapped]

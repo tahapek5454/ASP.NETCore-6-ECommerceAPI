@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Services
 {
-    public interface IFileService
+    public interface IFileServiceAlternative
     {
         Task<List<(string fileName, string path)>> UploadAsync(string path, IFormFileCollection files);
         Task<bool> CopyFileAsync(string path, IFormFile file);
