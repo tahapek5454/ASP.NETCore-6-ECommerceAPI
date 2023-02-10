@@ -105,7 +105,7 @@ namespace E_CommerceAPI.Infrastructure.Services
 
                 //verileri ekleme
                 results.Add(isDone);
-                datas.Add((fileNewName,Path.Combine(uploadPath, fileNewName))); 
+                datas.Add((fileNewName,Path.Combine(path, fileNewName))); 
 
             }
 
