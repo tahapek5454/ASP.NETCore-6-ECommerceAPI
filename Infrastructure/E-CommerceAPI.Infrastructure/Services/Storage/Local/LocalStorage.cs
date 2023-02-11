@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Infrastructure.Services.Storage.Local
 {
-    public class LocalStorage : ILocalStorage
+    public class LocalStorage :Storage, ILocalStorage
     {
 
         // bize wwwroot un yolunu ve kontrolunu saglayacak
@@ -72,7 +72,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Storage.Local
             foreach (IFormFile file in files)
             {
                 // uygun isimlendirme islemi
-                string fileNewName = file.FileName;
+                string fileNewName = await FileRenameAsync(pathOrContainerName, file.Name, HasFile);
 
                 // kayıt islemi
                 _ = await CopyFileAsync(Path.Combine(uploadPath, fileNewName), file);

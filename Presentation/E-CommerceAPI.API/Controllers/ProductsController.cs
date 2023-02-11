@@ -108,7 +108,9 @@ namespace E_CommerceAPI.API.Controllers
         public async Task<IActionResult> Upload()
         {
 
-            var datas = await _storageService.UploadAsync("resource\\ownFile", Request.Form.Files);
+            // var datas = await _storageService.UploadAsync("resource\\ownFile", Request.Form.Files);
+
+            var datas = await _storageService.UploadAsync("deneme", Request.Form.Files);
 
             await _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile
             {
@@ -119,7 +121,9 @@ namespace E_CommerceAPI.API.Controllers
 
             await _productImageFileWriteRepository.SaveAsync();
 
+            //var datas = _storageService.HasFile("deneme", "ben.jpg");
 
+            //await _storageService.DeleteAsync("deneme", "ben.jpg");
 
 
             //var datas = await _fileService.UploadAsync("resource\\ownFile", Request.Form.Files);

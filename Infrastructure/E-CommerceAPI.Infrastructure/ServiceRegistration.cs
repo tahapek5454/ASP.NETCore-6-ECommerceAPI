@@ -3,6 +3,7 @@ using E_CommerceAPI.Application.Services;
 using E_CommerceAPI.Infrastructure.Enums;
 using E_CommerceAPI.Infrastructure.Services;
 using E_CommerceAPI.Infrastructure.Services.Storage;
+using E_CommerceAPI.Infrastructure.Services.Storage.GCP;
 using E_CommerceAPI.Infrastructure.Services.Storage.Local;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -26,7 +27,7 @@ namespace E_CommerceAPI.Infrastructure
         // Bu yapacagimiz islem biziim storage'ımızn tam anlamıyla ne olacagını program.cs den girilicek
         // generic class ile belirlemek istememiz Local mi , Azure mu, AWS mi, GCP mi... Bunun gibi injection tanımla
         public static void AddStorage<T>(this IServiceCollection serviceCollection)
-            where T : class, IStorage
+            where T : Storage, IStorage
         {
             serviceCollection.AddScoped<IStorage, T>();
         }
@@ -44,6 +45,7 @@ namespace E_CommerceAPI.Infrastructure
                 case StorageType.AWS:
                     break;
                 case StorageType.GCP:
+                    serviceCollection.AddScoped<IStorage, GCPStorage>();
                     break;
                 default:
                     serviceCollection.AddScoped<IStorage, LocalStorage>();

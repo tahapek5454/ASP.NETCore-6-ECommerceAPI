@@ -1,6 +1,7 @@
 using E_CommerceAPI.Application.Validators.Products;
 using E_CommerceAPI.Infrastructure;
 using E_CommerceAPI.Infrastructure.Filters;
+using E_CommerceAPI.Infrastructure.Services.Storage.GCP;
 using E_CommerceAPI.Infrastructure.Services.Storage.Local;
 using E_CommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
@@ -10,7 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container. -> kendi injectionlarimizi metodu extension ederek dahil ettik
 builder.Services.AddPersistenceService();
 builder.Services.AddInfrastructureServices();
-builder.Services.AddStorage<LocalStorage>();  // -> ozel dosya kaydý için hangi storageýn kullanýlacagýný atýyoruz -> alternatifi de var anlarsýn :)
+//builder.Services.AddStorage<LocalStorage>();  // -> ozel dosya kaydý için hangi storageýn kullanýlacagýný atýyoruz -> alternatifi de var anlarsýn :)
+builder.Services.AddStorage<GCPStorage>();  // -> ozel dosya kaydý için hangi storageýn kullanýlacagýný atýyoruz -> alternatifi de var anlarsýn :)
+
 
 //Cors politikalarinin duzenleyecegimiz kisim cors politikasi browserdan gelen isteklerin hangi turlerinin kabul edilecegini soyleyecegiz
 //Bu tanýmlama tum isteklere izin verir -> ornek olmasi acisindan yazdým biz projede sadece frontendimizin backendden yararlanmasini istiyoruz
