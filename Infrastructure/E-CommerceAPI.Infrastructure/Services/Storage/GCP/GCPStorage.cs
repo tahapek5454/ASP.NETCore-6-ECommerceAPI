@@ -27,6 +27,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Storage.GCP
         {
             // Credentialım'dan ban bir client olusturucak
             using var storageClient = StorageClient.Create(_googleCredential);
+            fileName = pathOrContainerName + "/" + fileName;
 
             await storageClient.DeleteObjectAsync(_configuration["Storage:GoogleCloudStorageBucketName"], fileName);
 
@@ -37,7 +38,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Storage.GCP
             // Credentialım'dan ban bir client olusturucak
             using var storageClient =  StorageClient.Create(_googleCredential);
             List<string> files = new List<string>();
-            files = storageClient.ListObjects(_configuration["Storage:GoogleCloudStorageBucketName"]).Select(o => o.Name).ToList();
+            files = storageClient.ListObjects(_configuration["Storage:GoogleCloudStorageBucketName"], pathOrContainerName).Select(o => o.Name).ToList();
 
             return files;
 
@@ -47,6 +48,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Storage.GCP
         {
             // Credentialım'dan ban bir client olusturucak
             using var storageClient = StorageClient.Create(_googleCredential);
+            fileName = pathOrContainerName+"/" + fileName;
             return storageClient.ListObjects(_configuration["Storage:GoogleCloudStorageBucketName"]).Any(o => o.Name == fileName);
         }
 
@@ -60,6 +62,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Storage.GCP
             foreach (IFormFile file in files)
             {
                 string newFileName = await FileRenameAsync(pathOrContainerName, file.Name, HasFile);
+                newFileName = pathOrContainerName + "/" + newFileName;
 
                 var uploadedFile = await storageClient.UploadObjectAsync(
                         _configuration["Storage:GoogleCloudStorageBucketName"],

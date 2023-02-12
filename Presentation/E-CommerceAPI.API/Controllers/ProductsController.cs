@@ -110,20 +110,22 @@ namespace E_CommerceAPI.API.Controllers
 
             // var datas = await _storageService.UploadAsync("resource\\ownFile", Request.Form.Files);
 
-            var datas = await _storageService.UploadAsync("deneme", Request.Form.Files);
+            // var datas = await _storageService.UploadAsync("invoices", Request.Form.Files);
 
-            await _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile
-            {
-                FileName = d.fileName,
-                Path = d.pathOrContainerName,
-                Storage = _storageService.StorageName
-            }).ToList());
+            //await _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile
+            //{
+            //    FileName = d.fileName,
+            //    Path = d.pathOrContainerName,
+            //    Storage = _storageService.StorageName
+            //}).ToList());
 
-            await _productImageFileWriteRepository.SaveAsync();
+            //await _productImageFileWriteRepository.SaveAsync();
 
-            //var datas = _storageService.HasFile("deneme", "ben.jpg");
+           // var datas = _storageService.HasFile("deneme", "taha-pek-4.jpg");
 
-            //await _storageService.DeleteAsync("deneme", "ben.jpg");
+            // var data = _storageService.GetFiles("invoices");
+
+            await _storageService.DeleteAsync("invoices", "as-2.png");
 
 
             //var datas = await _fileService.UploadAsync("resource\\ownFile", Request.Form.Files);
