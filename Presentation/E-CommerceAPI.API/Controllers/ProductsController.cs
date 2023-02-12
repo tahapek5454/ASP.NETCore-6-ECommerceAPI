@@ -105,27 +105,30 @@ namespace E_CommerceAPI.API.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Upload()
+        public async Task<IActionResult> Upload(string id)
         {
 
             // var datas = await _storageService.UploadAsync("resource\\ownFile", Request.Form.Files);
 
-            // var datas = await _storageService.UploadAsync("invoices", Request.Form.Files);
+            var product = await _productReadRepository.GetByIdAsync(id);
 
-            //await _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile
-            //{
-            //    FileName = d.fileName,
-            //    Path = d.pathOrContainerName,
-            //    Storage = _storageService.StorageName
-            //}).ToList());
+            var datas = await _storageService.UploadAsync("products", Request.Form.Files);
 
-            //await _productImageFileWriteRepository.SaveAsync();
+            await _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile
+            {
+                FileName = d.fileName,
+                Path = d.pathOrContainerName,
+                Storage = _storageService.StorageName,
+                Products = new List<Product>() { product}
+            }).ToList());
 
-           // var datas = _storageService.HasFile("deneme", "taha-pek-4.jpg");
+            await _productImageFileWriteRepository.SaveAsync();
+
+            // var datas = _storageService.HasFile("deneme", "taha-pek-4.jpg");
 
             // var data = _storageService.GetFiles("invoices");
 
-            await _storageService.DeleteAsync("invoices", "as-2.png");
+            // await _storageService.DeleteAsync("invoices", "as-2.png");
 
 
             //var datas = await _fileService.UploadAsync("resource\\ownFile", Request.Form.Files);

@@ -8,5 +8,6 @@ namespace E_CommerceAPI.Domain.Entities
 {
     public class ProductImageFile:OwnFile
     {
+        public ICollection<Product> Products { get; set; } // bir ressim birden fazla urune ait olabilir
     }
 }

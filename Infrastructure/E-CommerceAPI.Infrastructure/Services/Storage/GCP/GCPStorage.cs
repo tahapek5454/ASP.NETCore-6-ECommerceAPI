@@ -62,16 +62,17 @@ namespace E_CommerceAPI.Infrastructure.Services.Storage.GCP
             foreach (IFormFile file in files)
             {
                 string newFileName = await FileRenameAsync(pathOrContainerName, file.Name, HasFile);
-                newFileName = pathOrContainerName + "/" + newFileName;
+                string gcpNewFileName = pathOrContainerName + "/" + newFileName;
 
                 var uploadedFile = await storageClient.UploadObjectAsync(
                         _configuration["Storage:GoogleCloudStorageBucketName"],
-                        newFileName,
+                        gcpNewFileName,
                         file.ContentType,
                         file.OpenReadStream()
                     );
 
-                datas.Add((file.Name, pathOrContainerName));
+               
+                datas.Add((newFileName, pathOrContainerName+"/"+newFileName));
             }
             return datas;
         }
