@@ -1,3 +1,4 @@
+using E_CommerceAPI.Application;
 using E_CommerceAPI.Application.Validators.Products;
 using E_CommerceAPI.Infrastructure;
 using E_CommerceAPI.Infrastructure.Filters;
@@ -13,6 +14,7 @@ builder.Services.AddPersistenceService();
 builder.Services.AddInfrastructureServices();
 //builder.Services.AddStorage<LocalStorage>();  // -> ozel dosya kaydý için hangi storageýn kullanýlacagýný atýyoruz -> alternatifi de var anlarsýn :)
 builder.Services.AddStorage<GCPStorage>();  // -> ozel dosya kaydý için hangi storageýn kullanýlacagýný atýyoruz -> alternatifi de var anlarsýn :)
+builder.Services.AddAplicationServices();
 
 
 //Cors politikalarinin duzenleyecegimiz kisim cors politikasi browserdan gelen isteklerin hangi turlerinin kabul edilecegini soyleyecegiz

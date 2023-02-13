@@ -1,4 +1,6 @@
 ﻿using E_CommerceAPI.Application.Abstractions.Storage;
+using E_CommerceAPI.Application.Features.Commands.CreateProduct;
+using E_CommerceAPI.Application.Features.Queries.GetAllProduct;
 using E_CommerceAPI.Application.Repositories.OwnFileRepository;
 using E_CommerceAPI.Application.Repositories.OwnFileRepository.InvoiceFileRepository;
 using E_CommerceAPI.Application.Repositories.OwnFileRepository.ProductImageFileRepostitory;
@@ -7,6 +9,7 @@ using E_CommerceAPI.Application.RequestParameters;
 using E_CommerceAPI.Application.Services;
 using E_CommerceAPI.Application.ViewModels.Products;
 using E_CommerceAPI.Domain.Entities;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -37,6 +40,10 @@ namespace E_CommerceAPI.API.Controllers
 
         private readonly IConfiguration _configuration;
 
+        //artık uzun uzun yazmaya son
+        // application katmanında serviceRegistrationu tanımlamıstık ordan ilgil bagımlılıklar IOC ye eklenecek zaten
+        private readonly IMediator _mediator;
+
 
         public ProductsController(
             IProductReadRepository productReadRepository,
@@ -50,7 +57,8 @@ namespace E_CommerceAPI.API.Controllers
             IOwnFileReadRepository ownFileReadRepository,
             IOwnFileWriteRepository ownFileWriteRepository,
             IStorageService storageService,
-            IConfiguration configuration
+            IConfiguration configuration,
+            IMediator mediator
             )
         {
             _productReadRepository = productReadRepository;
@@ -65,27 +73,16 @@ namespace E_CommerceAPI.API.Controllers
             _ownFileWriteRepository = ownFileWriteRepository;
             _storageService = storageService;
             _configuration = configuration;
+            _mediator = mediator;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get([FromQuery]Pagination pagination)
+        public async Task<IActionResult> Get([FromQuery]GetAllProductQueryRequest getAllProductQueryRequest)
         {
-            int totalCount = _productReadRepository.GetAll(false).Count();
-            var products = _productReadRepository.GetAll(false).Select(p => new
-            {
-                p.Id,
-                p.Name,
-                p.Stock,
-                p.Price,
-                p.CreateDate,
-                p.UpdateDate
-            }).Skip(pagination.Size * pagination.Page).Take(pagination.Size).ToList();
-
-            return Ok(new
-            {
-                totalCount,
-                products
-            });
+            // biz sende metodu kullanrak ona request nesnesini yolladık
+            // artık mediator bizim application yaptıgımız tanımlamara gore IOC den de ilgil bagımlılı alarak handler çalıştırıcak
+            GetAllProductQueryResponse response =  await _mediator.Send(getAllProductQueryRequest);
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
@@ -95,16 +92,9 @@ namespace E_CommerceAPI.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(VM_CreateProduct model)
+        public async Task<IActionResult> Post(CreateProductCommandRequest createProductCommandRequest)
         {
-            _ = await _productWriteRepository.AddAsync(new Product()
-            {
-                Name = model.Name,
-                Price = model.Price,
-                Stock = model.Stock,
-            });
-
-            _ = await _productWriteRepository.SaveAsync();
+            _ = await _mediator.Send(createProductCommandRequest);
 
             return Ok();
         }
