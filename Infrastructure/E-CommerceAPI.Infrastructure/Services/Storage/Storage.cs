@@ -41,6 +41,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Storage
                 }
                 else
                 {
+                    Counter = 1;
                     return newFileName;
                 }
             });

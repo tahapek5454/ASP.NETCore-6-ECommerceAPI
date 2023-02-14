@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_CommerceAPI.Application.Features.Queries.GetAllProduct
+namespace E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct
 {
-    public class GetAllProductQueryRequest:IRequest<GetAllProductQueryResponse>
+    public class GetAllProductQueryRequest : IRequest<GetAllProductQueryResponse>
     {
         //mediatR kütüphanesine CQRS patternımıza yardımcı olması için başvuruyoruz
         //Bu class gelen istek parametrelerini tutacaktır
