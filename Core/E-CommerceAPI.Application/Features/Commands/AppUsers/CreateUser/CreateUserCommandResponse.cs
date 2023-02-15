@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_CommerceAPI.Application.Features.Commands.AppUsers
+namespace E_CommerceAPI.Application.Features.Commands.AppUsers.CreateUser
 {
     public class CreateUserCommandResponse
     {

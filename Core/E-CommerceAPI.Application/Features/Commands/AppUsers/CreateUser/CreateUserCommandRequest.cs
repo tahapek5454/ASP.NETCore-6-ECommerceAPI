@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_CommerceAPI.Application.Features.Commands.AppUsers
+namespace E_CommerceAPI.Application.Features.Commands.AppUsers.CreateUser
 {
-    public class CreateUserCommandRequest:IRequest<CreateUserCommandResponse>
+    public class CreateUserCommandRequest : IRequest<CreateUserCommandResponse>
     {
         public string Name { get; set; }
         public string Surname { get; set; }

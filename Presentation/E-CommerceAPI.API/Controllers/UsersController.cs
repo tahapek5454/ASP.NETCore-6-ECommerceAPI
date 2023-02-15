@@ -1,4 +1,5 @@
-﻿using E_CommerceAPI.Application.Features.Commands.AppUsers;
+﻿using E_CommerceAPI.Application.Features.Commands.AppUsers.CreateUser;
+using E_CommerceAPI.Application.Features.Commands.AppUsers.LoginUser;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -21,6 +22,13 @@ namespace E_CommerceAPI.API.Controllers
         {
             CreateUserCommandResponse reponse = await _mediator.Send(createUserCommandRequest);
             return Ok(reponse);
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> LoginUser(LoginUserCommandRequest loginUserCommandRequest)
+        {
+            _ = await _mediator.Send(loginUserCommandRequest);
+            return Ok();
         }
 
     }

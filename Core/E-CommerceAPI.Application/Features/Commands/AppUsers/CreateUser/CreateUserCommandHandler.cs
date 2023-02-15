@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_CommerceAPI.Application.Features.Commands.AppUsers
+namespace E_CommerceAPI.Application.Features.Commands.AppUsers.CreateUser
 {
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommandRequest, CreateUserCommandResponse>
     {
@@ -27,17 +27,17 @@ namespace E_CommerceAPI.Application.Features.Commands.AppUsers
             IdentityResult result = await _userManager.CreateAsync(new()
             {
                 Id = Guid.NewGuid().ToString(),
-                UserName= request.UserName,
-                Email= request.Email,
-                Name= request.Name,
-                Surname= request.Surname,
+                UserName = request.UserName,
+                Email = request.Email,
+                Name = request.Name,
+                Surname = request.Surname,
             }, request.Password);
 
             // passwordu ayri veme sebebimiz haslenerek vermek metod kendi yapıyor
 
-            CreateUserCommandResponse response= new CreateUserCommandResponse() { Success = result.Succeeded};
+            CreateUserCommandResponse response = new CreateUserCommandResponse() { Success = result.Succeeded };
 
-            if(result.Succeeded)
+            if (result.Succeeded)
             {
                 // if true veri tabanına kayıt yapıldı
                 response.Message = "Kullanıcı Eklenmistir.";
