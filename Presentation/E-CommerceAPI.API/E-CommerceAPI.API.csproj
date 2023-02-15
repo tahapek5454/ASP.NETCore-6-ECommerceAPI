@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="wwwroot\resource\" />
     <Folder Include="wwwroot\resource\product-images\" />
   </ItemGroup>

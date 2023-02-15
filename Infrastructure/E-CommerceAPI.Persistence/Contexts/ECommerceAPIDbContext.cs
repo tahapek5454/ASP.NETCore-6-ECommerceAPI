@@ -1,5 +1,7 @@
 ﻿using E_CommerceAPI.Domain.Entities;
 using E_CommerceAPI.Domain.Entities.Common;
+using E_CommerceAPI.Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,8 +11,10 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Persistence.Contexts
 {
-    public class ECommerceAPIDbContext : DbContext
+    public class ECommerceAPIDbContext : IdentityDbContext<AppUser, AppRole, string>
     {
+        // DbContexti -> IdentityDbContexe çevirdik Aıthanticationlar için -> Appuser, AppRole ve key de = string olacak sekilde
+        // Yapılan işlemi srviceRegistrationda da bildirmelisin!
         // IOC container uzerinde doldurucagiz options'ı
         public ECommerceAPIDbContext(DbContextOptions options) : base(options)
         {

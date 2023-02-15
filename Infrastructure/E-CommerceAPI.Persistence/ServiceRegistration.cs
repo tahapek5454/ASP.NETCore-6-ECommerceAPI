@@ -18,6 +18,7 @@ using E_CommerceAPI.Application.Repositories.OwnFileRepository.ProductImageFileR
 using E_CommerceAPI.Persistence.Repositories.OwnFileRepository.ProductImageFileRepository;
 using E_CommerceAPI.Application.Repositories.OwnFileRepository.InvoiceFileRepository;
 using E_CommerceAPI.Persistence.Repositories.OwnFileRepository.InvoiceFileRepository;
+using E_CommerceAPI.Domain.Entities.Identity;
 
 namespace E_CommerceAPI.Persistence
 {
@@ -30,6 +31,16 @@ namespace E_CommerceAPI.Persistence
             // Configuration sınıfını ben olusturdum app.jsondan veri alabilmek için
             serviceCollection.AddDbContext<ECommerceAPIDbContext>(options => 
                 options.UseNpgsql(Configuration.ConnectionString));
+            // IdentityDbContext kullanacagimizdan onu bildirmeliyiz entityFrameworke de ne ile kullancagi bildirmeliyiz
+            serviceCollection.AddIdentity<AppUser, AppRole>(options =>
+            {
+                options.Password.RequiredLength = 3;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+
+            }).AddEntityFrameworkStores<ECommerceAPIDbContext>();
 
             //AddDbContexin lifecyl'ı scope oldugundan scope ile devam edelim -> scope her requeste ozel injection yapar ve bitince dispose eder
 
