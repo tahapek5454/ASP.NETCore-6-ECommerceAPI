@@ -1,10 +1,12 @@
 ﻿using E_CommerceAPI.Application.Abstractions.Storage;
+using E_CommerceAPI.Application.Abstractions.Tokens;
 using E_CommerceAPI.Application.Services;
 using E_CommerceAPI.Infrastructure.Enums;
 using E_CommerceAPI.Infrastructure.Services;
 using E_CommerceAPI.Infrastructure.Services.Storage;
 using E_CommerceAPI.Infrastructure.Services.Storage.GCP;
 using E_CommerceAPI.Infrastructure.Services.Storage.Local;
+using E_CommerceAPI.Infrastructure.Services.Tokens;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -22,6 +24,8 @@ namespace E_CommerceAPI.Infrastructure
             serviceCollection.AddScoped<IFileServiceAlternative, FileServiceAlternative>();
 
             serviceCollection.AddScoped<IStorageService, StorageService>();
+
+            serviceCollection.AddScoped<ITokenHandler, TokenHandler>();
         }
 
         // Bu yapacagimiz islem biziim storage'ımızn tam anlamıyla ne olacagını program.cs den girilicek

@@ -1,4 +1,6 @@
-﻿using E_CommerceAPI.Application.Exceptions;
+﻿using E_CommerceAPI.Application.Abstractions.Tokens;
+using E_CommerceAPI.Application.DTOs;
+using E_CommerceAPI.Application.Exceptions;
 using E_CommerceAPI.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -14,11 +16,13 @@ namespace E_CommerceAPI.Application.Features.Commands.AppUsers.LoginUser
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager; // -> bu da ıdentityden gelir sign işlemleri için hizmet veren servis
+        private readonly ITokenHandler _tokenHandler; // kendi olusturdgumuz token olusturmak için
 
-        public LoginUserCommandHandler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        public LoginUserCommandHandler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenHandler tokenHandler)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _tokenHandler = tokenHandler;
         }
 
         public async Task<LoginUserCommandResponse> Handle(LoginUserCommandRequest request, CancellationToken cancellationToken)
@@ -39,9 +43,19 @@ namespace E_CommerceAPI.Application.Features.Commands.AppUsers.LoginUser
             if(signInResult.Succeeded) // Authentication basarili
             {
                 // yetkiler belirlenecek
+                // token olusacak
+                Token token = _tokenHandler.CreateAccessToken(5);
+                return new LoginUserSuccessCommandResponse()
+                {
+                    Token = token,
+                };
+            }
+            else
+            {
+                throw new UserAuthenticationErrorException(UserAuthenticationErrorException.Message);
             }
 
-            return new();
+            
         }
     }
 }

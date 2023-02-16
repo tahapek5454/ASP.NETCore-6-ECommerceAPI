@@ -6,6 +6,9 @@ using E_CommerceAPI.Infrastructure.Services.Storage.GCP;
 using E_CommerceAPI.Infrastructure.Services.Storage.Local;
 using E_CommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +46,34 @@ builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+//Authenticationý bildirecegiz
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer("Admin", option =>
+    {
+        // gelen tokenýn jwt oldgunu soyledik ve validate yaparken nelere dikkat etmesini belirticez
+        option.TokenValidationParameters = new()
+        {
+            // olusturulacak token degerini kimlerin hangi originlerin/sitelerin kullanacagýný belirledigimiz yerdir. -> www.bilmemne.com
+            ValidateAudience = true,
+            // olusturulacak token degerinin kimin dagýttýnýn ifade ettigimiz yerdir -> www.api.com       
+            ValidateIssuer = true,
+            // olusturulan token degerinin suresini kontrol eder
+            ValidateLifetime= true,
+            // uretilecek token degerinin uygulamamýza ait oldugunu ifade eden securtity key verisinin dogrulanmasýdýr
+            ValidateIssuerSigningKey = true,
+
+
+            // -> true verek kontrol edilmesini sagladik simdi bunlarýn degelerini atayalým
+            ValidAudience = builder.Configuration["Token:Audience"],
+            ValidIssuer = builder.Configuration["Token:Issuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"]))
+
+        };
+    });
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -59,6 +90,7 @@ app.UseStaticFiles(); // wwwroot
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication(); // authentication ekledik
 app.UseAuthorization();
 
 app.MapControllers();

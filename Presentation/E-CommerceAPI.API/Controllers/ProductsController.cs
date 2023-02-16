@@ -9,13 +9,13 @@ using E_CommerceAPI.Application.Features.Queries.Products.GetByIdProduct;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
-
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace E_CommerceAPI.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes ="Admin")]  // tum metodları yetkilendirir
     public class ProductsController : ControllerBase
     {
         //artık uzun uzun yazmaya son
