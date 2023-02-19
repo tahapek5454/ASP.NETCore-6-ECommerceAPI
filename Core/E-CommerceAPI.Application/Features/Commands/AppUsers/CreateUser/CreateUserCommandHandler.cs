@@ -1,4 +1,6 @@
-﻿using E_CommerceAPI.Application.Exceptions;
+﻿using E_CommerceAPI.Application.Abstractions.Services;
+using E_CommerceAPI.Application.DTOs.Users;
+using E_CommerceAPI.Application.Exceptions;
 using E_CommerceAPI.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -12,47 +14,31 @@ namespace E_CommerceAPI.Application.Features.Commands.AppUsers.CreateUser
 {
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommandRequest, CreateUserCommandResponse>
     {
-        private readonly UserManager<AppUser> _userManager;
+        private readonly IUserService _userService;
 
-        public CreateUserCommandHandler(UserManager<AppUser> userManager)
+        public CreateUserCommandHandler(IUserService userService)
         {
-            _userManager = userManager;
+            _userService = userService;
         }
 
         public async Task<CreateUserCommandResponse> Handle(CreateUserCommandRequest request, CancellationToken cancellationToken)
         {
-            //AspNetCore.Identity bize UserManager adlı bir servis sunar ve iligli işlemleri yapmamıza olanak tanır.
-            // Bu manager db kısmında serviceRegistraion yaparken Ioc ye eklenir
-
-            IdentityResult result = await _userManager.CreateAsync(new()
+            // is kurallarının oldugu yerleri Infrastructure katmanına tasıdık
+            CreateUserResponseDTO responseDTO = await _userService.CreateAsync(new()
             {
-                Id = Guid.NewGuid().ToString(),
-                UserName = request.UserName,
                 Email = request.Email,
                 Name = request.Name,
+                Password = request.Password,
+                RePassword = request.RePassword,
                 Surname = request.Surname,
-            }, request.Password);
+                UserName = request.UserName,
+            });
 
-            // passwordu ayri veme sebebimiz haslenerek vermek metod kendi yapıyor
-
-            CreateUserCommandResponse response = new CreateUserCommandResponse() { Success = result.Succeeded };
-
-            if (result.Succeeded)
+            return new()
             {
-                // if true veri tabanına kayıt yapıldı
-                response.Message = "Kullanıcı Eklenmistir.";
-                return response;
-            }
-            else
-            {
-                foreach (var error in result.Errors)
-                {
-                    response.Message += $"{error.Code} - {error.Description}   ";
-                }
-
-                return response;
-                // throw new UserCreateFailedException(UserCreateFailedException.Message);
-            }
+                Message = responseDTO.Message,
+                Success = responseDTO.Success,
+            };
 
         }
     }

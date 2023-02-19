@@ -19,6 +19,9 @@ using E_CommerceAPI.Persistence.Repositories.OwnFileRepository.ProductImageFileR
 using E_CommerceAPI.Application.Repositories.OwnFileRepository.InvoiceFileRepository;
 using E_CommerceAPI.Persistence.Repositories.OwnFileRepository.InvoiceFileRepository;
 using E_CommerceAPI.Domain.Entities.Identity;
+using E_CommerceAPI.Application.Abstractions.Services;
+using E_CommerceAPI.Persistence.Services;
+using E_CommerceAPI.Application.Abstractions.Services.Authentications;
 
 namespace E_CommerceAPI.Persistence
 {
@@ -62,7 +65,13 @@ namespace E_CommerceAPI.Persistence
             serviceCollection.AddScoped<IInvoiceFileReadRepository, InvoiceFileReadRepository>();
             serviceCollection.AddScoped<IInvoiceFileWriteRepository, InvoiceFileWriteRepository>();
 
+            serviceCollection.AddScoped<IUserService, UserService>();
 
+            serviceCollection.AddScoped<IAuthService, AuthService>();
+            serviceCollection.AddScoped<IInternalAuthenticationService, AuthService>();
+            serviceCollection.AddScoped<IExternalAuthenticationService, AuthService>();
+
+           
 
         }
     }

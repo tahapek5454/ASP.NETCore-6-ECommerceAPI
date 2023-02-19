@@ -1,4 +1,5 @@
-﻿using E_CommerceAPI.Application.Abstractions.Tokens;
+﻿using E_CommerceAPI.Application.Abstractions.Services.Authentications;
+using E_CommerceAPI.Application.Abstractions.Tokens;
 using E_CommerceAPI.Application.DTOs;
 using E_CommerceAPI.Application.Exceptions;
 using E_CommerceAPI.Domain.Entities.Identity;
@@ -14,47 +15,27 @@ namespace E_CommerceAPI.Application.Features.Commands.AppUsers.LoginUser
 {
     public class LoginUserCommandHandler : IRequestHandler<LoginUserCommandRequest, LoginUserCommandResponse>
     {
-        private readonly UserManager<AppUser> _userManager;
-        private readonly SignInManager<AppUser> _signInManager; // -> bu da ıdentityden gelir sign işlemleri için hizmet veren servis
-        private readonly ITokenHandler _tokenHandler; // kendi olusturdgumuz token olusturmak için
+        private readonly IInternalAuthenticationService _internalAuthenticationService;
 
-        public LoginUserCommandHandler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenHandler tokenHandler)
+        public LoginUserCommandHandler(IInternalAuthenticationService internalAuthenticationService)
         {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _tokenHandler = tokenHandler;
+            _internalAuthenticationService = internalAuthenticationService;
         }
 
         public async Task<LoginUserCommandResponse> Handle(LoginUserCommandRequest request, CancellationToken cancellationToken)
         {
-            // kullanciyi ariyoruz once useerNmae ya da emaile gore
-            AppUser user = await _userManager.FindByNameAsync(request.UserNameOrEmail);
-            if(user == null)
+
+            Token token = await _internalAuthenticationService.LoginAsync(new()
             {
-                user = await _userManager.FindByEmailAsync(request.UserNameOrEmail);
-            }
+                Password = request.Password,
+                UserNameOrEmail = request.UserNameOrEmail,
 
-            if (user == null)
-                throw new UserNotFoundException(UserNotFoundException.Message);
+            }, 15);
 
-            //boolen sonuç döndürür authantica oldun mu oldmadın mı appUserda var mı bu user sifre ona bakar kendi hasler falan o islemleri kendi yapıyor cozuyor
-            SignInResult signInResult =  await _signInManager.CheckPasswordSignInAsync(user, request.Password, false); // false hatalı durumda kitleme mekanizması
-
-            if(signInResult.Succeeded) // Authentication basarili
+            return new LoginUserSuccessCommandResponse()
             {
-                // yetkiler belirlenecek
-                // token olusacak
-                Token token = _tokenHandler.CreateAccessToken(5);
-                return new LoginUserSuccessCommandResponse()
-                {
-                    Token = token,
-                };
-            }
-            else
-            {
-                throw new UserAuthenticationErrorException(UserAuthenticationErrorException.Message);
-            }
-
+                Token = token
+            };
             
         }
     }

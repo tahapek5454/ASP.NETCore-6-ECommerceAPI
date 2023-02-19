@@ -11,14 +11,4 @@ namespace E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin
     {
         public Token Token { get; set; }
     }
-
-    // GoogleAPI keyimizi gizli almak için dosyadan okuma yapılmaktadır o amaçla kuruldu
-    public class APIKey
-    {
-        public APIValue web { get; set; }
-    }
-    public class APIValue
-    {
-        public string client_id { get; set; }
-    }
 }

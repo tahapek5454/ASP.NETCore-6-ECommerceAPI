@@ -20,7 +20,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Tokens
             _configuration = configuration;
         }
 
-        public Token CreateAccessToken(int minute)
+        public Token CreateAccessToken(int second)
         {
             Token token = new Token();
 
@@ -31,7 +31,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Tokens
             SigningCredentials signingCredentials = new(symmetricSecurityKey, SecurityAlgorithms.HmacSha512);
 
             // token ayarlarını belitritoruz
-            token.Expiration = DateTime.UtcNow.AddMinutes(minute);
+            token.Expiration = DateTime.UtcNow.AddMinutes(second);
             JwtSecurityToken securityToken = new(
                     audience : _configuration["Token:Audience"],
                     issuer: _configuration["Token:Issuer"],
