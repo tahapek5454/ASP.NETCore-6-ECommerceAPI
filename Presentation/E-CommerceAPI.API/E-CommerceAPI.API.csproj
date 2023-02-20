@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Middlewares\" />
     <Folder Include="wwwroot\resource\" />
     <Folder Include="wwwroot\resource\product-images\" />
   </ItemGroup>

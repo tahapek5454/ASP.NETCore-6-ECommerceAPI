@@ -1,3 +1,4 @@
+using E_CommerceAPI.API.Extensions;
 using E_CommerceAPI.API.OwnConfigurations.ColumnWriters;
 using E_CommerceAPI.Application;
 using E_CommerceAPI.Application.Validators.Products;
@@ -133,6 +134,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
+// Global exception Handler için kullanacagiz
+app.ConfigureExceptionHandler<Program>(app.Services.GetRequiredService<ILogger<Program>>());
 
 app.UseStaticFiles(); // wwwroot
 

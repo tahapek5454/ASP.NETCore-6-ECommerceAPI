@@ -1152,3 +1152,546 @@ Content-Type: application/json; charset=utf-8
 2023-02-20 15:32:48.963 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
 2023-02-20 15:32:48.969 +03:00 [INF] ResponseBody: {"totalCount":11,"products":[{"id":"d69e8cfd-191a-4c0a-94fd-6fbcc1fc36fc","name":"Tabak","stock":5,"price":5,"createDate":"2023-01-30T17:05:34.149768Z","updateDate":"0001-01-01T00:00:00"},{"id":"2faeed0c-0b8b-4960-827b-8df4b09c80de","name":"Kasik","stock":5,"price":6,"createDate":"2023-02-12T13:37:05.400835Z","updateDate":"0001-01-01T00:00:00"},{"id":"43aa3a27-a55a-47e7-9ec9-f03949e9b02c","name":"Mause","stock":4,"price":380,"createDate":"2023-02-13T11:45:17.638455Z","updateDate":"0001-01-01T00:00:00"},{"id":"27b10a7b-b940-4174-aebd-7d4aebd986c7","name":"klavye","stock":5,"price":200,"createDate":"2023-02-15T11:56:02.72787Z","updateDate":"0001-01-01T00:00:00"},{"id":"5695e13f-0b38-466b-b153-db69fc653548","name":"denem","stock":5,"price":5,"createDate":"2023-02-20T12:09:17.339588Z","updateDate":"0001-01-01T00:00:00"}]}
 2023-02-20 15:32:48.980 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 82.1527ms
+2023-02-20 17:33:20.195 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS Pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-20 17:33:20.589 +03:00 [INF] Now listening on: https://localhost:7216
+2023-02-20 17:33:20.596 +03:00 [INF] Now listening on: http://localhost:5165
+2023-02-20 17:33:20.607 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-20 17:33:20.609 +03:00 [INF] Hosting environment: Development
+2023-02-20 17:33:20.610 +03:00 [INF] Content root path: C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\
+2023-02-20 17:33:22.907 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/swagger/index.html - -
+2023-02-20 17:33:24.205 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/swagger/index.html - - - 200 - text/html;charset=utf-8 1311.5862ms
+2023-02-20 17:33:24.269 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/_framework/aspnetcore-browser-refresh.js - -
+2023-02-20 17:33:24.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 66.0839ms
+2023-02-20 17:33:24.453 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/_vs/browserLink - -
+2023-02-20 17:33:24.876 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 422.8122ms
+2023-02-20 17:33:25.307 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/swagger/v1/swagger.json - -
+2023-02-20 17:33:25.653 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 346.7576ms
+2023-02-20 17:35:23.518 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/auth/GoogleLogin - -
+2023-02-20 17:35:23.538 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/auth/GoogleLogin
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:35:23.544 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:35:23.549 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-20 17:35:23.555 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/auth/GoogleLogin - - - 204 - - 36.7479ms
+2023-02-20 17:35:23.558 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/api/auth/GoogleLogin application/json 1423
+2023-02-20 17:35:23.563 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/GoogleLogin
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 1423
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:35:23.566 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:35:23.609 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API)'
+2023-02-20 17:35:23.661 +03:00 [INF] Route matched with {action = "GoogleLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandRequest) on controller E_CommerceAPI.API.Controllers.AuthController (E-CommerceAPI.API).
+2023-02-20 17:35:23.709 +03:00 [INF] RequestBody: {"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImQyNWY4ZGJjZjk3ZGM3ZWM0MDFmMDE3MWZiNmU2YmRhOWVkOWU3OTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2NzY5MDM0MjIsImF1ZCI6IjEwMTE0ODU2NDY3ODYtcjhqbXB0bzY3bzVlb2Fra2Nta2YyNTFoMDNyaDBxMnMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDMyMjYyNzgwMDc4OTc0MDU4MzgiLCJlbWFpbCI6InRhaGFwZWs1NDU0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIxMDExNDg1NjQ2Nzg2LXI4am1wdG82N281ZW9ha2tjbWtmMjUxaDAzcmgwcTJzLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwibmFtZSI6IlRhaGEgUGVrIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FFZEZUcDRwdFFVelh1cnRpQS02TlVTMXhzczRwMnVtSEtaaVFfZnFudE50cEE9czk2LWMiLCJnaXZlbl9uYW1lIjoiVGFoYSIsImZhbWlseV9uYW1lIjoiUGVrIiwiaWF0IjoxNjc2OTAzNzIyLCJleHAiOjE2NzY5MDczMjIsImp0aSI6IjA4OTFhZTEyMmE4ZmI0ZWU0NDQ3ZTNmNWUwMDgzMTUzNjE3YTZjNmEifQ.tzH0ZV55GoYArdRgFHUhH1Jb5ClS9mrS27wvpAIbJPvhqWZQUaFUdtsQqxMDOh8HACghHxQ826M0QN0SvDk0q-Vicf0llTNdPlIaNIvcKaDtUQw03JcmcPnvFOIPYPNer37J7QyyCWL_qu_Vx3uKnOOAMPAGPdORrAq61E-t5Zstj_WTl6EtTR8Gr3eq8Ks0_DVlPMt9WvDYDFHU3pnNa0n9mGPEjsyqY5y1m5kBVpT1WCHr2d-mD_jZRaWqvHxaANJ2rL1gJRvksFKIvbt5bJ9nHc1m-1LOqmjxFA0Ok7B-7463gXLNX9dSzb_27w58rd-a-DFXAJ6Yag3Shd-81w","id":"103226278007897405838","name":"Taha Pek","email":"tahapek5454@gmail.com","photoUrl":"https://lh3.googleusercontent.com/a/AEdFTp4ptQUzXurtiA-6NUS1xss4p2umHKZiQ_fqntNtpA=s96-c","firstName":"Taha","lastName":"Pek","provider":"GOOGLE"}
+2023-02-20 17:35:26.646 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__loginProvider_0='?', @__providerKey_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."LoginProvider", a."ProviderKey", a."ProviderDisplayName", a."UserId"
+FROM "AspNetUserLogins" AS a
+WHERE a."LoginProvider" = @__loginProvider_0 AND a."ProviderKey" = @__providerKey_1
+LIMIT 2
+2023-02-20 17:35:26.843 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2023-02-20 17:35:26.919 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__loginProvider_0='?', @__providerKey_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."LoginProvider", a."ProviderKey", a."ProviderDisplayName", a."UserId"
+FROM "AspNetUserLogins" AS a
+WHERE a."LoginProvider" = @__loginProvider_0 AND a."ProviderKey" = @__providerKey_1
+LIMIT 2
+2023-02-20 17:35:26.925 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2023-02-20 17:35:26.930 +03:00 [WRN] AddLogin for user failed because it was already associated with another user.
+2023-02-20 17:35:27.163 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-20 17:35:27.340 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p18='?', @p0='?' (DbType = Int32), @p1='?', @p19='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "Name" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "Surname" = @p15, "TwoFactorEnabled" = @p16, "UserName" = @p17
+WHERE "Id" = @p18 AND "ConcurrencyStamp" = @p19;
+2023-02-20 17:35:27.381 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandResponse'.
+2023-02-20 17:35:27.404 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-20 17:35:27.414 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API) in 3742.9358ms
+2023-02-20 17:35:27.418 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API)'
+2023-02-20 17:35:27.422 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFoYXJlc21hIiwibmJmIjoxNjc2OTAzNzI2LCJleHAiOjE2NzY5MDM3NDEsImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuYmlsbWVtbmUuY29tIn0.3P6iL0fGWehGZGSNCNS5Rs9vd0M2bM6J12nYac2GhqQd_1Kipp4Kh58lLkTNjYrSvLsHgl6Oijj49RU6Guokgg","expiration":"2023-02-20T14:35:41.9844456Z","refreshToken":"9srqG5wXQazdC2y/4bKQPs+LN7O63Lsr4JXFNioZUig="}}
+2023-02-20 17:35:27.447 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/api/auth/GoogleLogin application/json 1423 - 200 - application/json;+charset=utf-8 3888.7609ms
+2023-02-20 17:35:29.843 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-20 17:35:29.845 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:35:29.847 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:35:29.848 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-20 17:35:29.849 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 6.0158ms
+2023-02-20 17:35:29.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-20 17:35:29.852 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:35:29.854 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:35:30.013 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-20 17:35:30.027 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-20 17:35:30.308 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 277.2297ms
+2023-02-20 17:35:30.310 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-20 17:35:30.350 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Ben Koydum Hata
+   at E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryHandler.Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken) in C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Core\E-CommerceAPI.Application\Features\Queries\Products\GetAllProduct\GetAllProductQueryHandler.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at E_CommerceAPI.API.Controllers.ProductsController.Get(GetAllProductQueryRequest getAllProductQueryRequest) in C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\Controllers\ProductsController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_6>d.MoveNext() in C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\Program.cs:line 162
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-02-20 17:35:30.493 +03:00 [ERR] Ben Koydum Hata
+2023-02-20 17:35:30.502 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 500 - application/json 650.9105ms
+2023-02-20 17:37:15.074 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/auth/GoogleLogin - -
+2023-02-20 17:37:15.084 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/auth/GoogleLogin
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:37:15.088 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:37:15.090 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-20 17:37:15.094 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/auth/GoogleLogin - - - 204 - - 20.6298ms
+2023-02-20 17:37:15.113 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/api/auth/GoogleLogin application/json 1423
+2023-02-20 17:37:15.135 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/GoogleLogin
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 1423
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:37:15.137 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:37:15.139 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API)'
+2023-02-20 17:37:15.141 +03:00 [INF] Route matched with {action = "GoogleLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandRequest) on controller E_CommerceAPI.API.Controllers.AuthController (E-CommerceAPI.API).
+2023-02-20 17:37:15.146 +03:00 [INF] RequestBody: {"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImQyNWY4ZGJjZjk3ZGM3ZWM0MDFmMDE3MWZiNmU2YmRhOWVkOWU3OTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2NzY5MDM0MjIsImF1ZCI6IjEwMTE0ODU2NDY3ODYtcjhqbXB0bzY3bzVlb2Fra2Nta2YyNTFoMDNyaDBxMnMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDMyMjYyNzgwMDc4OTc0MDU4MzgiLCJlbWFpbCI6InRhaGFwZWs1NDU0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIxMDExNDg1NjQ2Nzg2LXI4am1wdG82N281ZW9ha2tjbWtmMjUxaDAzcmgwcTJzLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwibmFtZSI6IlRhaGEgUGVrIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FFZEZUcDRwdFFVelh1cnRpQS02TlVTMXhzczRwMnVtSEtaaVFfZnFudE50cEE9czk2LWMiLCJnaXZlbl9uYW1lIjoiVGFoYSIsImZhbWlseV9uYW1lIjoiUGVrIiwiaWF0IjoxNjc2OTAzNzIyLCJleHAiOjE2NzY5MDczMjIsImp0aSI6IjA4OTFhZTEyMmE4ZmI0ZWU0NDQ3ZTNmNWUwMDgzMTUzNjE3YTZjNmEifQ.tzH0ZV55GoYArdRgFHUhH1Jb5ClS9mrS27wvpAIbJPvhqWZQUaFUdtsQqxMDOh8HACghHxQ826M0QN0SvDk0q-Vicf0llTNdPlIaNIvcKaDtUQw03JcmcPnvFOIPYPNer37J7QyyCWL_qu_Vx3uKnOOAMPAGPdORrAq61E-t5Zstj_WTl6EtTR8Gr3eq8Ks0_DVlPMt9WvDYDFHU3pnNa0n9mGPEjsyqY5y1m5kBVpT1WCHr2d-mD_jZRaWqvHxaANJ2rL1gJRvksFKIvbt5bJ9nHc1m-1LOqmjxFA0Ok7B-7463gXLNX9dSzb_27w58rd-a-DFXAJ6Yag3Shd-81w","id":"103226278007897405838","name":"Taha Pek","email":"tahapek5454@gmail.com","photoUrl":"https://lh3.googleusercontent.com/a/AEdFTp4ptQUzXurtiA-6NUS1xss4p2umHKZiQ_fqntNtpA=s96-c","firstName":"Taha","lastName":"Pek","provider":"GOOGLE"}
+2023-02-20 17:37:15.222 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__loginProvider_0='?', @__providerKey_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."LoginProvider", a."ProviderKey", a."ProviderDisplayName", a."UserId"
+FROM "AspNetUserLogins" AS a
+WHERE a."LoginProvider" = @__loginProvider_0 AND a."ProviderKey" = @__providerKey_1
+LIMIT 2
+2023-02-20 17:37:15.228 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2023-02-20 17:37:15.241 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__loginProvider_0='?', @__providerKey_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."LoginProvider", a."ProviderKey", a."ProviderDisplayName", a."UserId"
+FROM "AspNetUserLogins" AS a
+WHERE a."LoginProvider" = @__loginProvider_0 AND a."ProviderKey" = @__providerKey_1
+LIMIT 2
+2023-02-20 17:37:15.249 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2023-02-20 17:37:15.258 +03:00 [WRN] AddLogin for user failed because it was already associated with another user.
+2023-02-20 17:37:15.275 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-20 17:37:15.297 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p18='?', @p0='?' (DbType = Int32), @p1='?', @p19='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "Name" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "Surname" = @p15, "TwoFactorEnabled" = @p16, "UserName" = @p17
+WHERE "Id" = @p18 AND "ConcurrencyStamp" = @p19;
+2023-02-20 17:37:15.311 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandResponse'.
+2023-02-20 17:37:15.319 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-20 17:37:15.321 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API) in 176.8467ms
+2023-02-20 17:37:15.324 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API)'
+2023-02-20 17:37:15.326 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFoYXJlc21hIiwibmJmIjoxNjc2OTAzODM1LCJleHAiOjE2NzY5MDM4NTAsImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuYmlsbWVtbmUuY29tIn0.yTDX7vFcnS7wqEBhbzsj9uUJpKLef1PfM9EgTSLmq1ElWIC9uBOV9rwIyHAz_gRRH0G2JZgSNEF7Mtc07AHRYw","expiration":"2023-02-20T14:37:30.2624274Z","refreshToken":"AsD1B33twdBZqVtI4joflPkKnd0GeYVx271n7vsxV9U="}}
+2023-02-20 17:37:15.329 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/api/auth/GoogleLogin application/json 1423 - 200 - application/json;+charset=utf-8 220.1486ms
+2023-02-20 17:37:19.284 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-20 17:37:19.286 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:37:19.290 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:37:19.291 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-20 17:37:19.293 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 8.9062ms
+2023-02-20 17:37:19.295 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-20 17:37:19.296 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:37:19.298 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:37:19.300 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-20 17:37:19.302 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-20 17:37:19.420 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 114.8576ms
+2023-02-20 17:37:19.422 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-20 17:37:19.459 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Ben Koydum Hata
+   at E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryHandler.Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken) in C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Core\E-CommerceAPI.Application\Features\Queries\Products\GetAllProduct\GetAllProductQueryHandler.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at E_CommerceAPI.API.Controllers.ProductsController.Get(GetAllProductQueryRequest getAllProductQueryRequest) in C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\Controllers\ProductsController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_6>d.MoveNext() in C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\Program.cs:line 162
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-02-20 17:37:19.489 +03:00 [ERR] Ben Koydum Hata
+2023-02-20 17:37:19.491 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 500 - application/json 196.0948ms
+2023-02-20 17:37:23.608 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/auth/GoogleLogin - -
+2023-02-20 17:37:23.610 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/auth/GoogleLogin
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:37:23.616 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:37:23.619 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-20 17:37:23.622 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/auth/GoogleLogin - - - 204 - - 14.6864ms
+2023-02-20 17:37:23.624 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/api/auth/GoogleLogin application/json 1423
+2023-02-20 17:37:23.626 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/GoogleLogin
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 1423
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:37:23.631 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:37:23.633 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API)'
+2023-02-20 17:37:23.637 +03:00 [INF] Route matched with {action = "GoogleLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandRequest) on controller E_CommerceAPI.API.Controllers.AuthController (E-CommerceAPI.API).
+2023-02-20 17:37:23.641 +03:00 [INF] RequestBody: {"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImQyNWY4ZGJjZjk3ZGM3ZWM0MDFmMDE3MWZiNmU2YmRhOWVkOWU3OTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2NzY5MDM0MjIsImF1ZCI6IjEwMTE0ODU2NDY3ODYtcjhqbXB0bzY3bzVlb2Fra2Nta2YyNTFoMDNyaDBxMnMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDMyMjYyNzgwMDc4OTc0MDU4MzgiLCJlbWFpbCI6InRhaGFwZWs1NDU0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIxMDExNDg1NjQ2Nzg2LXI4am1wdG82N281ZW9ha2tjbWtmMjUxaDAzcmgwcTJzLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwibmFtZSI6IlRhaGEgUGVrIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FFZEZUcDRwdFFVelh1cnRpQS02TlVTMXhzczRwMnVtSEtaaVFfZnFudE50cEE9czk2LWMiLCJnaXZlbl9uYW1lIjoiVGFoYSIsImZhbWlseV9uYW1lIjoiUGVrIiwiaWF0IjoxNjc2OTAzNzIyLCJleHAiOjE2NzY5MDczMjIsImp0aSI6IjA4OTFhZTEyMmE4ZmI0ZWU0NDQ3ZTNmNWUwMDgzMTUzNjE3YTZjNmEifQ.tzH0ZV55GoYArdRgFHUhH1Jb5ClS9mrS27wvpAIbJPvhqWZQUaFUdtsQqxMDOh8HACghHxQ826M0QN0SvDk0q-Vicf0llTNdPlIaNIvcKaDtUQw03JcmcPnvFOIPYPNer37J7QyyCWL_qu_Vx3uKnOOAMPAGPdORrAq61E-t5Zstj_WTl6EtTR8Gr3eq8Ks0_DVlPMt9WvDYDFHU3pnNa0n9mGPEjsyqY5y1m5kBVpT1WCHr2d-mD_jZRaWqvHxaANJ2rL1gJRvksFKIvbt5bJ9nHc1m-1LOqmjxFA0Ok7B-7463gXLNX9dSzb_27w58rd-a-DFXAJ6Yag3Shd-81w","id":"103226278007897405838","name":"Taha Pek","email":"tahapek5454@gmail.com","photoUrl":"https://lh3.googleusercontent.com/a/AEdFTp4ptQUzXurtiA-6NUS1xss4p2umHKZiQ_fqntNtpA=s96-c","firstName":"Taha","lastName":"Pek","provider":"GOOGLE"}
+2023-02-20 17:37:23.685 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__loginProvider_0='?', @__providerKey_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."LoginProvider", a."ProviderKey", a."ProviderDisplayName", a."UserId"
+FROM "AspNetUserLogins" AS a
+WHERE a."LoginProvider" = @__loginProvider_0 AND a."ProviderKey" = @__providerKey_1
+LIMIT 2
+2023-02-20 17:37:23.694 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2023-02-20 17:37:23.703 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__loginProvider_0='?', @__providerKey_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."LoginProvider", a."ProviderKey", a."ProviderDisplayName", a."UserId"
+FROM "AspNetUserLogins" AS a
+WHERE a."LoginProvider" = @__loginProvider_0 AND a."ProviderKey" = @__providerKey_1
+LIMIT 2
+2023-02-20 17:37:23.709 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2023-02-20 17:37:23.713 +03:00 [WRN] AddLogin for user failed because it was already associated with another user.
+2023-02-20 17:37:23.720 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-20 17:37:23.727 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p18='?', @p0='?' (DbType = Int32), @p1='?', @p19='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "Name" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "Surname" = @p15, "TwoFactorEnabled" = @p16, "UserName" = @p17
+WHERE "Id" = @p18 AND "ConcurrencyStamp" = @p19;
+2023-02-20 17:37:23.737 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandResponse'.
+2023-02-20 17:37:23.739 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-20 17:37:23.740 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API) in 99.3004ms
+2023-02-20 17:37:23.742 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API)'
+2023-02-20 17:37:23.744 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFoYXJlc21hIiwibmJmIjoxNjc2OTAzODQzLCJleHAiOjE2NzY5MDM4NTgsImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuYmlsbWVtbmUuY29tIn0.o6KFA_UK9IvgnSUHOE_JGcTvF8MXzO26ruEmsZ05DiwtE0i3uWmS_Th6-Rl-dXIkiUMDpNZ1iNN9hC1eC1NZ9g","expiration":"2023-02-20T14:37:38.7166268Z","refreshToken":"INnjprjcmAAYdwa3rywaCdIuzksB4ReDN7MzuzJUWs8="}}
+2023-02-20 17:37:23.748 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/api/auth/GoogleLogin application/json 1423 - 200 - application/json;+charset=utf-8 124.1639ms
+2023-02-20 17:37:25.552 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-20 17:37:25.554 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:37:25.558 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:37:25.559 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-20 17:37:25.561 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 9.4386ms
+2023-02-20 17:37:25.562 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-20 17:37:25.564 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-20 17:37:25.567 +03:00 [INF] CORS policy execution successful.
+2023-02-20 17:37:25.570 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-20 17:37:25.572 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-20 17:37:25.689 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 114.8632ms
+2023-02-20 17:37:25.692 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-20 17:37:25.737 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Ben Koydum Hata
+   at E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryHandler.Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken) in C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Core\E-CommerceAPI.Application\Features\Queries\Products\GetAllProduct\GetAllProductQueryHandler.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at E_CommerceAPI.API.Controllers.ProductsController.Get(GetAllProductQueryRequest getAllProductQueryRequest) in C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\Controllers\ProductsController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_6>d.MoveNext() in C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\Program.cs:line 162
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-02-20 17:37:25.756 +03:00 [ERR] Ben Koydum Hata
+2023-02-20 17:37:25.757 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 500 - application/json 194.6943ms
