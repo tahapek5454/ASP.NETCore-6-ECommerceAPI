@@ -31,7 +31,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Tokens
             SigningCredentials signingCredentials = new(symmetricSecurityKey, SecurityAlgorithms.HmacSha512);
 
             // token ayarlarını belitritoruz
-            token.Expiration = DateTime.UtcNow.AddMinutes(second);
+            token.Expiration = DateTime.UtcNow.AddSeconds(second);
             JwtSecurityToken securityToken = new(
                     audience : _configuration["Token:Audience"],
                     issuer: _configuration["Token:Issuer"],
