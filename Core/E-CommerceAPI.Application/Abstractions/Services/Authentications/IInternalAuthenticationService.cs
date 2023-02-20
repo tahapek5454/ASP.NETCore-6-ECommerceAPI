@@ -10,5 +10,6 @@ namespace E_CommerceAPI.Application.Abstractions.Services.Authentications
     public interface IInternalAuthenticationService
     {
         Task<Token> LoginAsync(InternalLoginDTO model, int accessTokenLifeTime);
+        Task<Token> RefreshTokenLoginAsync(string refreshToken);
     }
 }
