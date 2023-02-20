@@ -1,3 +1,4 @@
+using E_CommerceAPI.API.OwnConfigurations.ColumnWriters;
 using E_CommerceAPI.Application;
 using E_CommerceAPI.Application.Validators.Products;
 using E_CommerceAPI.Infrastructure;
@@ -7,7 +8,13 @@ using E_CommerceAPI.Infrastructure.Services.Storage.Local;
 using E_CommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
+using Serilog.Context;
+using Serilog.Core;
+using Serilog.Sinks.PostgreSQL;
+using System.Security.Claims;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +36,43 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
                         policy.WithOrigins("https://localhost:4200", "http://localhost:4200").AllowAnyHeader().AllowAnyMethod()
                         ));
 
+
+//Serilog loglama imkanýný tanýtacagýz
+// nerelere yazýlacagý , veritabaný connection stringi autocreati ve hangi kolonlarý bulundurmasý gerektigini soyledik
+Logger log = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log.txt")
+    .WriteTo.PostgreSQL(
+        builder.Configuration.GetConnectionString("PostgreSQL"),
+        "Logs",
+        needAutoCreateTable: true,
+        columnOptions: new Dictionary<string, ColumnWriterBase>
+        {
+            {"message", new RenderedMessageColumnWriter() },
+            {"message_template", new MessageTemplateColumnWriter() },
+            {"level", new LevelColumnWriter() },
+            {"time_stamp", new TimestampColumnWriter() },
+            {"exception", new ExceptionColumnWriter() },
+            {"log_event", new LogEventSerializedColumnWriter() },
+            {"user_name", new UserNameColumnWriter() }
+        })
+    .Enrich.FromLogContext() // contexten ekstra propertyleri al
+    .MinimumLevel.Information() // info uzerinden loglamalar yap
+     .CreateLogger();
+
+
+builder.Host.UseSerilog(log);  // programýmýzýn kendi log sistemini serilog ile degistirdik
+
+//HettpLogging for Asp.NETCore -> dokumantasyondan aldým
+builder.Services.AddHttpLogging(logging =>
+{
+    logging.LoggingFields = HttpLoggingFields.All;
+    logging.RequestHeaders.Add("sec-ch-ua");
+    logging.MediaTypeOptions.AddText("application/javascript");
+    logging.RequestBodyLogLimit = 4096;
+    logging.ResponseBodyLogLimit = 4096;
+
+});
 
 
 
@@ -73,6 +117,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             //expire zamaný belirleme
             LifetimeValidator = (notBefore, expires, securityToken, validationParameters) => expires!=null ? expires > DateTime.UtcNow : false,
 
+            NameClaimType = ClaimTypes.Name //jwt uzerinde name claimine e karsilik gelen degeri  User.Identity.name propertisinden elde edebiliriz -> claimlere name ekle
+            
+
         };
     });
 
@@ -87,15 +134,28 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles(); // wwwroot
+
+// loglama mekanizmasýný cagiracagiz ustte koyduk diger middle ware leri de loglayabilsib dite
+app.UseSerilogRequestLogging();
+app.UseHttpLogging();
+
 //cors politikasii middleware e ekeleyip programda calistiricaz
 app.UseCors();
-
-app.UseStaticFiles(); // wwwroot
 
 app.UseHttpsRedirection();
 
 app.UseAuthentication(); // authentication ekledik
 app.UseAuthorization();
+
+//loglamada userNameAlmak için
+app.Use(async (context, next) =>
+{
+    var userName = context.User?.Identity?.IsAuthenticated != null || true ? context.User.Identity.Name : null;
+    LogContext.PushProperty("user_name", userName);
+
+    await next();
+});
 
 app.MapControllers();
 
