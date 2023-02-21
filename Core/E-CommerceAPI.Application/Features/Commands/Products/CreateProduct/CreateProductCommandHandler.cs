@@ -1,4 +1,5 @@
-﻿using E_CommerceAPI.Application.Repositories.ProductRepository;
+﻿using E_CommerceAPI.Application.Abstractions.Hubs;
+using E_CommerceAPI.Application.Repositories.ProductRepository;
 using E_CommerceAPI.Domain.Entities;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -14,10 +15,12 @@ namespace E_CommerceAPI.Application.Features.Commands.Products.CreateProduct
     {
         private readonly IProductWriteRepository _repository;
         private readonly ILogger<CreateProductCommandHandler> _logger;
-        public CreateProductCommandHandler(IProductWriteRepository repository, ILogger<CreateProductCommandHandler> logger)
+        private readonly IProductHubService _productHubService;
+        public CreateProductCommandHandler(IProductWriteRepository repository, ILogger<CreateProductCommandHandler> logger, IProductHubService productHubService)
         {
             _repository = repository;
             _logger = logger;
+            _productHubService = productHubService;
         }
 
         public async Task<CreateProductCommandResponse> Handle(CreateProductCommandRequest request, CancellationToken cancellationToken)
@@ -33,6 +36,7 @@ namespace E_CommerceAPI.Application.Features.Commands.Products.CreateProduct
             _ = await _repository.SaveAsync();
             // add isleminde dondermeye gerek yok
             _logger.LogInformation("New Product Added");
+            await _productHubService.ProductAddedMesageAsync($"{request.Name} isminde bir urun eklenmistir");
             return new();
         }
     }

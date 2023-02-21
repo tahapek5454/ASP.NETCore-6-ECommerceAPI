@@ -32,7 +32,7 @@ namespace E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 IdToken = request.IdToken
-            }, 15);
+            }, 900);
 
             return new()
             {

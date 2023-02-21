@@ -1,3 +1,4 @@
+using E_Commerce.SignalR;
 using E_CommerceAPI.API.Extensions;
 using E_CommerceAPI.API.OwnConfigurations.ColumnWriters;
 using E_CommerceAPI.Application;
@@ -26,6 +27,7 @@ builder.Services.AddInfrastructureServices();
 //builder.Services.AddStorage<LocalStorage>();  // -> ozel dosya kaydý için hangi storageýn kullanýlacagýný atýyoruz -> alternatifi de var anlarsýn :)
 builder.Services.AddStorage<GCPStorage>();  // -> ozel dosya kaydý için hangi storageýn kullanýlacagýný atýyoruz -> alternatifi de var anlarsýn :)
 builder.Services.AddAplicationServices();
+builder.Services.AddSignalRServices(); // -> signalr
 
 
 //Cors politikalarinin duzenleyecegimiz kisim cors politikasi browserdan gelen isteklerin hangi turlerinin kabul edilecegini soyleyecegiz
@@ -34,7 +36,7 @@ builder.Services.AddAplicationServices();
 //                            policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));    
 
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy => 
-                        policy.WithOrigins("https://localhost:4200", "http://localhost:4200").AllowAnyHeader().AllowAnyMethod()
+                        policy.WithOrigins("https://localhost:4200", "http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials()
                         ));
 
 
@@ -163,5 +165,7 @@ app.Use(async (context, next) =>
 });
 
 app.MapControllers();
+
+app.MapHubs(); // hublarýmýzý endpointlerini belirledik
 
 app.Run();

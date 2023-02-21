@@ -1695,3 +1695,1919 @@ System.Exception: Ben Koydum Hata
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
 2023-02-20 17:37:25.756 +03:00 [ERR] Ben Koydum Hata
 2023-02-20 17:37:25.757 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 500 - application/json 194.6943ms
+2023-02-21 13:27:11.122 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS Pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-21 13:27:11.634 +03:00 [INF] Now listening on: https://localhost:7216
+2023-02-21 13:27:11.636 +03:00 [INF] Now listening on: http://localhost:5165
+2023-02-21 13:27:11.643 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 13:27:11.645 +03:00 [INF] Hosting environment: Development
+2023-02-21 13:27:11.646 +03:00 [INF] Content root path: C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\
+2023-02-21 13:27:14.428 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/swagger/index.html - -
+2023-02-21 13:27:15.512 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/swagger/index.html - - - 200 - text/html;charset=utf-8 1087.3000ms
+2023-02-21 13:27:15.607 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/_framework/aspnetcore-browser-refresh.js - -
+2023-02-21 13:27:15.624 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 17.0259ms
+2023-02-21 13:27:15.878 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/_vs/browserLink - -
+2023-02-21 13:27:16.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 256.2016ms
+2023-02-21 13:27:16.372 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/swagger/v1/swagger.json - -
+2023-02-21 13:27:16.804 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 432.0943ms
+2023-02-21 13:41:47.704 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS Pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-21 13:41:48.279 +03:00 [INF] Now listening on: https://localhost:7216
+2023-02-21 13:41:48.281 +03:00 [INF] Now listening on: http://localhost:5165
+2023-02-21 13:41:48.288 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 13:41:48.290 +03:00 [INF] Hosting environment: Development
+2023-02-21 13:41:48.292 +03:00 [INF] Content root path: C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\
+2023-02-21 13:41:50.315 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/swagger/index.html - -
+2023-02-21 13:41:51.449 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/swagger/index.html - - - 200 - text/html;charset=utf-8 1116.1214ms
+2023-02-21 13:41:51.508 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/_framework/aspnetcore-browser-refresh.js - -
+2023-02-21 13:41:51.563 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 54.7540ms
+2023-02-21 13:41:51.715 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/_vs/browserLink - -
+2023-02-21 13:41:51.914 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 199.3021ms
+2023-02-21 13:41:52.159 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/swagger/v1/swagger.json - -
+2023-02-21 13:41:52.648 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 488.6761ms
+2023-02-21 13:42:33.241 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/auth/GoogleLogin - -
+2023-02-21 13:42:33.259 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/auth/GoogleLogin
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:42:33.268 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:33.272 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:42:33.276 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/auth/GoogleLogin - - - 204 - - 34.9106ms
+2023-02-21 13:42:33.279 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/api/auth/GoogleLogin application/json 1423
+2023-02-21 13:42:33.284 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/GoogleLogin
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 1423
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:42:33.287 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:33.320 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API)'
+2023-02-21 13:42:33.382 +03:00 [INF] Route matched with {action = "GoogleLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandRequest) on controller E_CommerceAPI.API.Controllers.AuthController (E-CommerceAPI.API).
+2023-02-21 13:42:33.437 +03:00 [INF] RequestBody: {"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImQyNWY4ZGJjZjk3ZGM3ZWM0MDFmMDE3MWZiNmU2YmRhOWVkOWU3OTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2NzY5NzU4NTIsImF1ZCI6IjEwMTE0ODU2NDY3ODYtcjhqbXB0bzY3bzVlb2Fra2Nta2YyNTFoMDNyaDBxMnMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDMyMjYyNzgwMDc4OTc0MDU4MzgiLCJlbWFpbCI6InRhaGFwZWs1NDU0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIxMDExNDg1NjQ2Nzg2LXI4am1wdG82N281ZW9ha2tjbWtmMjUxaDAzcmgwcTJzLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwibmFtZSI6IlRhaGEgUGVrIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FFZEZUcDRwdFFVelh1cnRpQS02TlVTMXhzczRwMnVtSEtaaVFfZnFudE50cEE9czk2LWMiLCJnaXZlbl9uYW1lIjoiVGFoYSIsImZhbWlseV9uYW1lIjoiUGVrIiwiaWF0IjoxNjc2OTc2MTUyLCJleHAiOjE2NzY5Nzk3NTIsImp0aSI6IjU2OTM5ZDdhNDNmMGZkNTVmNDE4NTczMGJiZTI2YzZlNWM3M2EyOTQifQ.hBhmbp-9B4E1oQVXCcJClHPz43Vu2kOvFelEMEApgYNtDk5iLEgt36LJRF-ztPF6XWjTbWkEZdi3qvgDabFODxyKxU8SGf73HuOX1hfAZ6GJD-9gb6GUIbWGjDY9bN51cF4_m6Xuab_L4VWc8sWFiWjpNMAVxiLAt_ZLZFKr3umqtO7eZ_t0i5k9zFhy_jCm-hHzz2Wm0q7AVyLCoQr30MX0Mm5xC4RHT8cGs6jFc2C7T7q1rhBCTH9P6I2JwXb3YBeMvSHW21_hKLXaAsWNW_l85vF5J59axgxr4UXcVp98fC--rc9YzHYrNudhEE74eS0tg3ncEACIMl8MR1Sn9w","id":"103226278007897405838","name":"Taha Pek","email":"tahapek5454@gmail.com","photoUrl":"https://lh3.googleusercontent.com/a/AEdFTp4ptQUzXurtiA-6NUS1xss4p2umHKZiQ_fqntNtpA=s96-c","firstName":"Taha","lastName":"Pek","provider":"GOOGLE"}
+2023-02-21 13:42:37.142 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__loginProvider_0='?', @__providerKey_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."LoginProvider", a."ProviderKey", a."ProviderDisplayName", a."UserId"
+FROM "AspNetUserLogins" AS a
+WHERE a."LoginProvider" = @__loginProvider_0 AND a."ProviderKey" = @__providerKey_1
+LIMIT 2
+2023-02-21 13:42:37.465 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2023-02-21 13:42:37.590 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__loginProvider_0='?', @__providerKey_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."LoginProvider", a."ProviderKey", a."ProviderDisplayName", a."UserId"
+FROM "AspNetUserLogins" AS a
+WHERE a."LoginProvider" = @__loginProvider_0 AND a."ProviderKey" = @__providerKey_1
+LIMIT 2
+2023-02-21 13:42:37.604 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2023-02-21 13:42:37.615 +03:00 [WRN] AddLogin for user failed because it was already associated with another user.
+2023-02-21 13:42:37.898 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 13:42:38.139 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[@p18='?', @p0='?' (DbType = Int32), @p1='?', @p19='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "Name" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "Surname" = @p15, "TwoFactorEnabled" = @p16, "UserName" = @p17
+WHERE "Id" = @p18 AND "ConcurrencyStamp" = @p19;
+2023-02-21 13:42:38.202 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandResponse'.
+2023-02-21 13:42:38.229 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:42:38.238 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API) in 4847.5215ms
+2023-02-21 13:42:38.242 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.AuthController.GoogleLogin (E-CommerceAPI.API)'
+2023-02-21 13:42:38.246 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFoYXJlc21hIiwibmJmIjoxNjc2OTc2MTU3LCJleHAiOjE2NzY5NzcwNTcsImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuYmlsbWVtbmUuY29tIn0.Mc-7qTiKWmexJx1G5acjcpxKmv5vMiUv_cCNz2MifLorbkbPDvuarw-1Q_gTDsqQpvEcRJ4Y2J2Ey4APTv_CzA","expiration":"2023-02-21T10:57:37.675701Z","refreshToken":"rOjHjszeRF9kgcQDVU9wDz1egGwR+b5zMtwGvNjhjaY="}}
+2023-02-21 13:42:38.270 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/api/auth/GoogleLogin application/json 1423 - 200 - application/json;+charset=utf-8 4991.2329ms
+2023-02-21 13:42:42.405 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/auth/LoginUser - -
+2023-02-21 13:42:42.407 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/auth/LoginUser
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:42:42.409 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:42.411 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:42:42.412 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/auth/LoginUser - - - 204 - - 7.0037ms
+2023-02-21 13:42:42.413 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/api/auth/LoginUser application/json 47
+2023-02-21 13:42:42.415 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/LoginUser
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 47
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:42:42.417 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:42.418 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.AuthController.LoginUser (E-CommerceAPI.API)'
+2023-02-21 13:42:42.422 +03:00 [INF] Route matched with {action = "LoginUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(E_CommerceAPI.Application.Features.Commands.AppUsers.LoginUser.LoginUserCommandRequest) on controller E_CommerceAPI.API.Controllers.AuthController (E-CommerceAPI.API).
+2023-02-21 13:42:42.426 +03:00 [INF] RequestBody: {"userNameOrEmail":"deneme54","password":"123"}
+2023-02-21 13:42:42.482 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 13:42:42.530 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."Name", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."Surname", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 13:42:42.537 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p18='?', @p0='?' (DbType = Int32), @p1='?', @p19='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "Name" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "Surname" = @p15, "TwoFactorEnabled" = @p16, "UserName" = @p17
+WHERE "Id" = @p18 AND "ConcurrencyStamp" = @p19;
+2023-02-21 13:42:42.541 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Commands.AppUsers.LoginUser.LoginUserSuccessCommandResponse'.
+2023-02-21 13:42:42.545 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:42:42.547 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.AuthController.LoginUser (E-CommerceAPI.API) in 121.5321ms
+2023-02-21 13:42:42.549 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.AuthController.LoginUser (E-CommerceAPI.API)'
+2023-02-21 13:42:42.550 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZGVuZW1lNTQiLCJuYmYiOjE2NzY5NzYxNjIsImV4cCI6MTY3Njk3NzA2MiwiaXNzIjoid3d3Lm15YXBpLmNvbSIsImF1ZCI6Ind3dy5iaWxtZW1uZS5jb20ifQ.DFovmXnMwA5XUMr-6I9Wd42Z6LtR8SKiwBBnnHu6O2YFYTTbWZ95ThXCd_LwWPwkDyy3ZItGKaHzrphBYZHXVQ","expiration":"2023-02-21T10:57:42.5262428Z","refreshToken":"X+79wTCbqRoxGdI2gqw+EM1vD4Hkmalfk2+7a9H6FNw="}}
+2023-02-21 13:42:42.552 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/api/auth/LoginUser application/json 47 - 200 - application/json;+charset=utf-8 139.0230ms
+2023-02-21 13:42:48.596 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - -
+2023-02-21 13:42:48.597 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /product-hub/negotiate
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:42:48.600 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:48.601 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:42:48.603 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - - - 204 - - 6.6772ms
+2023-02-21 13:42:48.611 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - 0
+2023-02-21 13:42:48.613 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /product-hub/negotiate
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 0
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+X-Requested-With: XMLHttpRequest
+sec-ch-ua-mobile: [Redacted]
+x-signalr-user-agent: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:42:48.616 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:48.619 +03:00 [INF] Executing endpoint '/product-hub/negotiate'
+2023-02-21 13:42:48.650 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json
+Content-Length: 316
+2023-02-21 13:42:48.652 +03:00 [INF] Executed endpoint '/product-hub/negotiate'
+2023-02-21 13:42:48.653 +03:00 [INF] ResponseBody: {"negotiateVersion":1,"connectionId":"7DRldVkCk7M_wAV_xZE9jg","connectionToken":"chBdqWxeHktLqSmwnthQDQ","availableTransports":[{"transport":"WebSockets","transferFormats":["Text","Binary"]},{"transport":"ServerSentEvents","transferFormats":["Text"]},{"transport":"LongPolling","transferFormats":["Text","Binary"]}]}
+2023-02-21 13:42:48.655 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 44.0482ms
+2023-02-21 13:42:48.676 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7216/product-hub?id=chBdqWxeHktLqSmwnthQDQ - -
+2023-02-21 13:42:48.679 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /product-hub
+Connection: Upgrade
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Upgrade: websocket
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: [Redacted]
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2023-02-21 13:42:48.682 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:48.684 +03:00 [INF] Executing endpoint '/product-hub'
+2023-02-21 13:42:55.687 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - -
+2023-02-21 13:42:55.688 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /product-hub/negotiate
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:42:55.690 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:55.691 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:42:55.693 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - - - 204 - - 5.6131ms
+2023-02-21 13:42:55.694 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - 0
+2023-02-21 13:42:55.695 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /product-hub/negotiate
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 0
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+X-Requested-With: XMLHttpRequest
+sec-ch-ua-mobile: [Redacted]
+x-signalr-user-agent: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:42:55.697 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:55.699 +03:00 [INF] Executing endpoint '/product-hub/negotiate'
+2023-02-21 13:42:55.701 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json
+Content-Length: 316
+2023-02-21 13:42:55.703 +03:00 [INF] Executed endpoint '/product-hub/negotiate'
+2023-02-21 13:42:55.704 +03:00 [INF] ResponseBody: {"negotiateVersion":1,"connectionId":"qi6n2tLGIkPjNJ1qDsNbiQ","connectionToken":"e14IWJ9UOyJRml_W6LVWlQ","availableTransports":[{"transport":"WebSockets","transferFormats":["Text","Binary"]},{"transport":"ServerSentEvents","transferFormats":["Text"]},{"transport":"LongPolling","transferFormats":["Text","Binary"]}]}
+2023-02-21 13:42:55.707 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 12.5912ms
+2023-02-21 13:42:55.721 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7216/product-hub?id=e14IWJ9UOyJRml_W6LVWlQ - -
+2023-02-21 13:42:55.722 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /product-hub
+Connection: Upgrade
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Upgrade: websocket
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: [Redacted]
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2023-02-21 13:42:55.725 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:55.726 +03:00 [INF] Executing endpoint '/product-hub'
+2023-02-21 13:42:57.600 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:42:57.601 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:42:57.603 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:57.604 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:42:57.605 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 5.4819ms
+2023-02-21 13:42:57.607 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:42:57.608 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:42:57.610 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:42:57.765 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:42:57.771 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:42:57.888 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:42:57.918 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-02-21 13:42:57.920 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-02-21 13:42:57.947 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:42:57.978 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:42:58.011 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:42:58.012 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 237.6876ms
+2023-02-21 13:42:58.014 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:42:58.015 +03:00 [INF] ResponseBody: {"totalCount":11,"products":[{"id":"d69e8cfd-191a-4c0a-94fd-6fbcc1fc36fc","name":"Tabak","stock":5,"price":5,"createDate":"2023-01-30T17:05:34.149768Z","updateDate":"0001-01-01T00:00:00"},{"id":"2faeed0c-0b8b-4960-827b-8df4b09c80de","name":"Kasik","stock":5,"price":6,"createDate":"2023-02-12T13:37:05.400835Z","updateDate":"0001-01-01T00:00:00"},{"id":"43aa3a27-a55a-47e7-9ec9-f03949e9b02c","name":"Mause","stock":4,"price":380,"createDate":"2023-02-13T11:45:17.638455Z","updateDate":"0001-01-01T00:00:00"},{"id":"27b10a7b-b940-4174-aebd-7d4aebd986c7","name":"klavye","stock":5,"price":200,"createDate":"2023-02-15T11:56:02.72787Z","updateDate":"0001-01-01T00:00:00"},{"id":"5695e13f-0b38-466b-b153-db69fc653548","name":"denem","stock":5,"price":5,"createDate":"2023-02-20T12:09:17.339588Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:42:58.018 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 411.9044ms
+2023-02-21 13:43:03.218 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products - -
+2023-02-21 13:43:03.220 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:43:03.222 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:43:03.223 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:43:03.224 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products - - - 204 - - 5.9195ms
+2023-02-21 13:43:03.226 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/api/products application/json 36
+2023-02-21 13:43:03.228 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 36
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:43:03.231 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:43:03.235 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API)'
+2023-02-21 13:43:03.239 +03:00 [INF] Route matched with {action = "Post", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(E_CommerceAPI.Application.Features.Commands.Products.CreateProduct.CreateProductCommandRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:43:03.248 +03:00 [INF] RequestBody: {"name":"aaaaa","stock":7,"price":8}
+2023-02-21 13:43:03.419 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Id", "CreateDate", "Name", "Price", "Stock", "UpdateDate")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2023-02-21 13:43:03.424 +03:00 [INF] New Product Added
+2023-02-21 13:43:03.436 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-02-21 13:43:03.438 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API) in 193.3719ms
+2023-02-21 13:43:03.441 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API)'
+2023-02-21 13:43:03.447 +03:00 [INF] Response:
+StatusCode: 200
+2023-02-21 13:43:03.449 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/api/products application/json 36 - 200 0 - 223.3341ms
+2023-02-21 13:43:06.885 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:43:06.887 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:43:06.889 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:43:06.890 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:43:06.893 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 7.8589ms
+2023-02-21 13:43:06.895 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:43:06.897 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:43:06.899 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:43:06.901 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:43:06.903 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:43:06.907 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:43:06.912 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:43:06.915 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:43:06.917 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:43:06.918 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 13.384ms
+2023-02-21 13:43:06.920 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:43:06.921 +03:00 [INF] ResponseBody: {"totalCount":12,"products":[{"id":"d69e8cfd-191a-4c0a-94fd-6fbcc1fc36fc","name":"Tabak","stock":5,"price":5,"createDate":"2023-01-30T17:05:34.149768Z","updateDate":"0001-01-01T00:00:00"},{"id":"2faeed0c-0b8b-4960-827b-8df4b09c80de","name":"Kasik","stock":5,"price":6,"createDate":"2023-02-12T13:37:05.400835Z","updateDate":"0001-01-01T00:00:00"},{"id":"43aa3a27-a55a-47e7-9ec9-f03949e9b02c","name":"Mause","stock":4,"price":380,"createDate":"2023-02-13T11:45:17.638455Z","updateDate":"0001-01-01T00:00:00"},{"id":"27b10a7b-b940-4174-aebd-7d4aebd986c7","name":"klavye","stock":5,"price":200,"createDate":"2023-02-15T11:56:02.72787Z","updateDate":"0001-01-01T00:00:00"},{"id":"5695e13f-0b38-466b-b153-db69fc653548","name":"denem","stock":5,"price":5,"createDate":"2023-02-20T12:09:17.339588Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:43:06.923 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 28.4164ms
+2023-02-21 13:44:59.396 +03:00 [INF] Executed endpoint '/product-hub'
+2023-02-21 13:44:59.396 +03:00 [INF] Executed endpoint '/product-hub'
+2023-02-21 13:44:59.398 +03:00 [INF] Response:
+StatusCode: 101
+Connection: Upgrade
+Date: Tue, 21 Feb 2023 10:42:55 GMT
+Server: Kestrel
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Upgrade: websocket
+Vary: [Redacted]
+Sec-WebSocket-Accept: [Redacted]
+2023-02-21 13:44:59.400 +03:00 [INF] Response:
+StatusCode: 101
+Connection: Upgrade
+Date: Tue, 21 Feb 2023 10:42:48 GMT
+Server: Kestrel
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Upgrade: websocket
+Vary: [Redacted]
+Sec-WebSocket-Accept: [Redacted]
+2023-02-21 13:44:59.401 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7216/product-hub?id=e14IWJ9UOyJRml_W6LVWlQ - - - 101 - - 123680.3661ms
+2023-02-21 13:44:59.404 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7216/product-hub?id=chBdqWxeHktLqSmwnthQDQ - - - 101 - - 130727.3823ms
+2023-02-21 13:45:00.320 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - -
+2023-02-21 13:45:00.397 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /product-hub/negotiate
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:00.400 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:00.401 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:45:00.405 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - - - 204 - - 85.0549ms
+2023-02-21 13:45:00.413 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - 0
+2023-02-21 13:45:00.426 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /product-hub/negotiate
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 0
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+X-Requested-With: XMLHttpRequest
+sec-ch-ua-mobile: [Redacted]
+x-signalr-user-agent: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:00.433 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:00.435 +03:00 [INF] Executing endpoint '/product-hub/negotiate'
+2023-02-21 13:45:00.440 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json
+Content-Length: 316
+2023-02-21 13:45:00.442 +03:00 [INF] Executed endpoint '/product-hub/negotiate'
+2023-02-21 13:45:00.444 +03:00 [INF] ResponseBody: {"negotiateVersion":1,"connectionId":"Ixg-q6w2-Ip2k6J4C6djLw","connectionToken":"mZqhGaSi93xC9IMmBFo8KA","availableTransports":[{"transport":"WebSockets","transferFormats":["Text","Binary"]},{"transport":"ServerSentEvents","transferFormats":["Text"]},{"transport":"LongPolling","transferFormats":["Text","Binary"]}]}
+2023-02-21 13:45:00.447 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 34.6993ms
+2023-02-21 13:45:00.509 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:45:00.511 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:00.514 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:00.517 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:45:00.519 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 9.9411ms
+2023-02-21 13:45:00.531 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:45:00.534 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:00.539 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:00.541 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:45:00.543 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:45:00.565 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:45:00.577 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:45:00.585 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:45:00.595 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:45:00.597 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 50.138ms
+2023-02-21 13:45:00.600 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:45:00.601 +03:00 [INF] ResponseBody: {"totalCount":12,"products":[{"id":"d69e8cfd-191a-4c0a-94fd-6fbcc1fc36fc","name":"Tabak","stock":5,"price":5,"createDate":"2023-01-30T17:05:34.149768Z","updateDate":"0001-01-01T00:00:00"},{"id":"2faeed0c-0b8b-4960-827b-8df4b09c80de","name":"Kasik","stock":5,"price":6,"createDate":"2023-02-12T13:37:05.400835Z","updateDate":"0001-01-01T00:00:00"},{"id":"43aa3a27-a55a-47e7-9ec9-f03949e9b02c","name":"Mause","stock":4,"price":380,"createDate":"2023-02-13T11:45:17.638455Z","updateDate":"0001-01-01T00:00:00"},{"id":"27b10a7b-b940-4174-aebd-7d4aebd986c7","name":"klavye","stock":5,"price":200,"createDate":"2023-02-15T11:56:02.72787Z","updateDate":"0001-01-01T00:00:00"},{"id":"5695e13f-0b38-466b-b153-db69fc653548","name":"denem","stock":5,"price":5,"createDate":"2023-02-20T12:09:17.339588Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:45:00.607 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 76.3588ms
+2023-02-21 13:45:00.640 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7216/product-hub?id=mZqhGaSi93xC9IMmBFo8KA - -
+2023-02-21 13:45:00.642 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /product-hub
+Connection: Upgrade
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Upgrade: websocket
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: [Redacted]
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2023-02-21 13:45:00.645 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:00.647 +03:00 [INF] Executing endpoint '/product-hub'
+2023-02-21 13:45:10.968 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:45:10.970 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:10.972 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:10.973 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:45:10.975 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 6.5622ms
+2023-02-21 13:45:10.976 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:45:10.978 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:10.979 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:10.981 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:45:10.982 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:45:10.986 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:45:10.990 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:45:10.992 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:45:10.994 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:45:10.995 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 11.2062ms
+2023-02-21 13:45:10.997 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:45:10.999 +03:00 [INF] ResponseBody: {"totalCount":12,"products":[{"id":"d69e8cfd-191a-4c0a-94fd-6fbcc1fc36fc","name":"Tabak","stock":5,"price":5,"createDate":"2023-01-30T17:05:34.149768Z","updateDate":"0001-01-01T00:00:00"},{"id":"2faeed0c-0b8b-4960-827b-8df4b09c80de","name":"Kasik","stock":5,"price":6,"createDate":"2023-02-12T13:37:05.400835Z","updateDate":"0001-01-01T00:00:00"},{"id":"43aa3a27-a55a-47e7-9ec9-f03949e9b02c","name":"Mause","stock":4,"price":380,"createDate":"2023-02-13T11:45:17.638455Z","updateDate":"0001-01-01T00:00:00"},{"id":"27b10a7b-b940-4174-aebd-7d4aebd986c7","name":"klavye","stock":5,"price":200,"createDate":"2023-02-15T11:56:02.72787Z","updateDate":"0001-01-01T00:00:00"},{"id":"5695e13f-0b38-466b-b153-db69fc653548","name":"denem","stock":5,"price":5,"createDate":"2023-02-20T12:09:17.339588Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:45:11.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 24.8520ms
+2023-02-21 13:45:12.644 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:45:12.645 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:12.647 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:12.649 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:45:12.650 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:45:12.655 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:45:12.658 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:45:12.661 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:45:12.663 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:45:12.664 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 11.2154ms
+2023-02-21 13:45:12.666 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:45:12.667 +03:00 [INF] ResponseBody: {"totalCount":12,"products":[{"id":"d69e8cfd-191a-4c0a-94fd-6fbcc1fc36fc","name":"Tabak","stock":5,"price":5,"createDate":"2023-01-30T17:05:34.149768Z","updateDate":"0001-01-01T00:00:00"},{"id":"2faeed0c-0b8b-4960-827b-8df4b09c80de","name":"Kasik","stock":5,"price":6,"createDate":"2023-02-12T13:37:05.400835Z","updateDate":"0001-01-01T00:00:00"},{"id":"43aa3a27-a55a-47e7-9ec9-f03949e9b02c","name":"Mause","stock":4,"price":380,"createDate":"2023-02-13T11:45:17.638455Z","updateDate":"0001-01-01T00:00:00"},{"id":"27b10a7b-b940-4174-aebd-7d4aebd986c7","name":"klavye","stock":5,"price":200,"createDate":"2023-02-15T11:56:02.72787Z","updateDate":"0001-01-01T00:00:00"},{"id":"5695e13f-0b38-466b-b153-db69fc653548","name":"denem","stock":5,"price":5,"createDate":"2023-02-20T12:09:17.339588Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:45:12.672 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 28.3528ms
+2023-02-21 13:45:39.966 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products - -
+2023-02-21 13:45:39.968 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:39.971 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:39.973 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:45:39.974 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products - - - 204 - - 7.7100ms
+2023-02-21 13:45:39.975 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/api/products application/json 35
+2023-02-21 13:45:39.977 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 35
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:39.978 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:39.980 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API)'
+2023-02-21 13:45:39.981 +03:00 [INF] Route matched with {action = "Post", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(E_CommerceAPI.Application.Features.Commands.Products.CreateProduct.CreateProductCommandRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:45:39.983 +03:00 [INF] RequestBody: {"name":"w","stock":777,"price":88}
+2023-02-21 13:45:39.992 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Id", "CreateDate", "Name", "Price", "Stock", "UpdateDate")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2023-02-21 13:45:39.996 +03:00 [INF] New Product Added
+2023-02-21 13:45:39.997 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-02-21 13:45:39.998 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API) in 14.783ms
+2023-02-21 13:45:40.000 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API)'
+2023-02-21 13:45:40.001 +03:00 [INF] Response:
+StatusCode: 200
+2023-02-21 13:45:40.003 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/api/products application/json 35 - 200 0 - 27.9092ms
+2023-02-21 13:45:40.010 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:45:40.012 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:40.015 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:40.018 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:45:40.021 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 11.4913ms
+2023-02-21 13:45:40.024 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:45:40.026 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:40.030 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:40.032 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:45:40.033 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:45:40.040 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:45:40.044 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:45:40.047 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:45:40.049 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:45:40.050 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 12.8593ms
+2023-02-21 13:45:40.052 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:45:40.054 +03:00 [INF] ResponseBody: {"totalCount":13,"products":[{"id":"d69e8cfd-191a-4c0a-94fd-6fbcc1fc36fc","name":"Tabak","stock":5,"price":5,"createDate":"2023-01-30T17:05:34.149768Z","updateDate":"0001-01-01T00:00:00"},{"id":"2faeed0c-0b8b-4960-827b-8df4b09c80de","name":"Kasik","stock":5,"price":6,"createDate":"2023-02-12T13:37:05.400835Z","updateDate":"0001-01-01T00:00:00"},{"id":"43aa3a27-a55a-47e7-9ec9-f03949e9b02c","name":"Mause","stock":4,"price":380,"createDate":"2023-02-13T11:45:17.638455Z","updateDate":"0001-01-01T00:00:00"},{"id":"27b10a7b-b940-4174-aebd-7d4aebd986c7","name":"klavye","stock":5,"price":200,"createDate":"2023-02-15T11:56:02.72787Z","updateDate":"0001-01-01T00:00:00"},{"id":"5695e13f-0b38-466b-b153-db69fc653548","name":"denem","stock":5,"price":5,"createDate":"2023-02-20T12:09:17.339588Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:45:40.056 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 32.5895ms
+2023-02-21 13:45:53.158 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products - -
+2023-02-21 13:45:53.160 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:53.162 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:53.163 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:45:53.164 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products - - - 204 - - 6.0466ms
+2023-02-21 13:45:53.165 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/api/products application/json 35
+2023-02-21 13:45:53.166 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 35
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:53.169 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:53.171 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API)'
+2023-02-21 13:45:53.173 +03:00 [INF] Route matched with {action = "Post", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(E_CommerceAPI.Application.Features.Commands.Products.CreateProduct.CreateProductCommandRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:45:53.179 +03:00 [INF] RequestBody: {"name":"a","stock":777,"price":88}
+2023-02-21 13:45:53.184 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Id", "CreateDate", "Name", "Price", "Stock", "UpdateDate")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2023-02-21 13:45:53.191 +03:00 [INF] New Product Added
+2023-02-21 13:45:53.192 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-02-21 13:45:53.194 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API) in 15.5279ms
+2023-02-21 13:45:53.196 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API)'
+2023-02-21 13:45:53.199 +03:00 [INF] Response:
+StatusCode: 200
+2023-02-21 13:45:53.201 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/api/products application/json 35 - 200 0 - 36.1255ms
+2023-02-21 13:45:53.210 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:45:53.212 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:53.214 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:53.215 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:45:53.218 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 7.3645ms
+2023-02-21 13:45:53.220 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:45:53.222 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:45:53.224 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:45:53.226 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:45:53.227 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:45:53.231 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:45:53.235 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:45:53.239 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:45:53.242 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:45:53.243 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 13.2162ms
+2023-02-21 13:45:53.245 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:45:53.246 +03:00 [INF] ResponseBody: {"totalCount":14,"products":[{"id":"d69e8cfd-191a-4c0a-94fd-6fbcc1fc36fc","name":"Tabak","stock":5,"price":5,"createDate":"2023-01-30T17:05:34.149768Z","updateDate":"0001-01-01T00:00:00"},{"id":"2faeed0c-0b8b-4960-827b-8df4b09c80de","name":"Kasik","stock":5,"price":6,"createDate":"2023-02-12T13:37:05.400835Z","updateDate":"0001-01-01T00:00:00"},{"id":"43aa3a27-a55a-47e7-9ec9-f03949e9b02c","name":"Mause","stock":4,"price":380,"createDate":"2023-02-13T11:45:17.638455Z","updateDate":"0001-01-01T00:00:00"},{"id":"27b10a7b-b940-4174-aebd-7d4aebd986c7","name":"klavye","stock":5,"price":200,"createDate":"2023-02-15T11:56:02.72787Z","updateDate":"0001-01-01T00:00:00"},{"id":"5695e13f-0b38-466b-b153-db69fc653548","name":"denem","stock":5,"price":5,"createDate":"2023-02-20T12:09:17.339588Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:45:53.248 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 27.9443ms
+2023-02-21 13:46:23.493 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=1&size=5 - -
+2023-02-21 13:46:23.495 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:23.497 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:23.498 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:46:23.500 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=1&size=5 - - - 204 - - 7.3097ms
+2023-02-21 13:46:23.505 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=1&size=5 - -
+2023-02-21 13:46:23.507 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:23.509 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:23.510 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:46:23.511 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:46:23.515 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:46:23.519 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-02-21 13:46:23.521 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-02-21 13:46:23.525 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-02-21 13:46:23.528 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:46:23.530 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:46:23.531 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 18.178ms
+2023-02-21 13:46:23.534 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:46:23.536 +03:00 [INF] ResponseBody: {"totalCount":14,"products":[{"id":"fdf8e8a4-9977-42c4-bb26-137125ca7897","name":"a","stock":5,"price":5,"createDate":"2023-02-20T12:16:30.215247Z","updateDate":"0001-01-01T00:00:00"},{"id":"2612c2e2-8072-4005-8a8f-f7753743df75","name":"w","stock":5,"price":5,"createDate":"2023-02-20T12:20:19.146589Z","updateDate":"0001-01-01T00:00:00"},{"id":"0c4b7d57-996f-4c2a-afb3-733b940bd31e","name":"w","stock":7,"price":7,"createDate":"2023-02-20T12:22:30.473289Z","updateDate":"0001-01-01T00:00:00"},{"id":"84efac45-aea1-4188-9d80-04a6691a2715","name":"a","stock":7,"price":7,"createDate":"2023-02-20T12:23:16.92864Z","updateDate":"0001-01-01T00:00:00"},{"id":"f44fcc8a-0542-4d82-817f-c019cd23fbfe","name":"zzz","stock":5,"price":5,"createDate":"2023-02-20T12:25:12.662287Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:46:23.538 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=1&size=5 - - - 200 - application/json;+charset=utf-8 32.2822ms
+2023-02-21 13:46:25.362 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=2&size=5 - -
+2023-02-21 13:46:25.363 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:25.366 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:25.368 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:46:25.371 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=2&size=5 - - - 204 - - 9.0723ms
+2023-02-21 13:46:25.373 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=2&size=5 - -
+2023-02-21 13:46:25.375 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:25.380 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:25.382 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:46:25.384 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:46:25.390 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:46:25.393 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:46:25.396 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:46:25.399 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:46:25.402 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 13.2954ms
+2023-02-21 13:46:25.404 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:46:25.406 +03:00 [INF] ResponseBody: {"totalCount":14,"products":[{"id":"402e603e-5139-4438-b11c-1922294553d1","name":"qw","stock":5,"price":5,"createDate":"2023-02-20T12:32:48.763505Z","updateDate":"0001-01-01T00:00:00"},{"id":"167999b2-2f79-49d0-a63f-3123d9c16f0f","name":"aaaaa","stock":7,"price":8,"createDate":"2023-02-21T10:43:03.375172Z","updateDate":"0001-01-01T00:00:00"},{"id":"3e5bac54-6859-421c-9023-bc33a3f2142b","name":"w","stock":777,"price":88,"createDate":"2023-02-21T10:45:39.986864Z","updateDate":"0001-01-01T00:00:00"},{"id":"d402d2b9-4474-4e2d-98e9-312e09e248db","name":"a","stock":777,"price":88,"createDate":"2023-02-21T10:45:53.182869Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:46:25.408 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=2&size=5 - - - 200 - application/json;+charset=utf-8 35.0924ms
+2023-02-21 13:46:40.146 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products - -
+2023-02-21 13:46:40.147 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:40.150 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:40.151 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:46:40.152 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products - - - 204 - - 6.7503ms
+2023-02-21 13:46:40.154 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/api/products application/json 38
+2023-02-21 13:46:40.155 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 38
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:40.157 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:40.158 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API)'
+2023-02-21 13:46:40.159 +03:00 [INF] Route matched with {action = "Post", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(E_CommerceAPI.Application.Features.Commands.Products.CreateProduct.CreateProductCommandRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:46:40.162 +03:00 [INF] RequestBody: {"name":"taha","stock":777,"price":88}
+2023-02-21 13:46:40.165 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Id", "CreateDate", "Name", "Price", "Stock", "UpdateDate")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2023-02-21 13:46:40.171 +03:00 [INF] New Product Added
+2023-02-21 13:46:40.172 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-02-21 13:46:40.173 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API) in 10.7179ms
+2023-02-21 13:46:40.174 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API)'
+2023-02-21 13:46:40.175 +03:00 [INF] Response:
+StatusCode: 200
+2023-02-21 13:46:40.177 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/api/products application/json 38 - 200 0 - 22.8516ms
+2023-02-21 13:46:40.181 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=2&size=5 - -
+2023-02-21 13:46:40.183 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:40.185 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:40.187 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:46:40.190 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=2&size=5 - - - 204 - - 8.9735ms
+2023-02-21 13:46:40.192 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=2&size=5 - -
+2023-02-21 13:46:40.193 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:40.199 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:40.201 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:46:40.204 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:46:40.210 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:46:40.216 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:46:40.221 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:46:40.223 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:46:40.224 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 15.4473ms
+2023-02-21 13:46:40.226 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:46:40.228 +03:00 [INF] ResponseBody: {"totalCount":15,"products":[{"id":"402e603e-5139-4438-b11c-1922294553d1","name":"qw","stock":5,"price":5,"createDate":"2023-02-20T12:32:48.763505Z","updateDate":"0001-01-01T00:00:00"},{"id":"167999b2-2f79-49d0-a63f-3123d9c16f0f","name":"aaaaa","stock":7,"price":8,"createDate":"2023-02-21T10:43:03.375172Z","updateDate":"0001-01-01T00:00:00"},{"id":"3e5bac54-6859-421c-9023-bc33a3f2142b","name":"w","stock":777,"price":88,"createDate":"2023-02-21T10:45:39.986864Z","updateDate":"0001-01-01T00:00:00"},{"id":"d402d2b9-4474-4e2d-98e9-312e09e248db","name":"a","stock":777,"price":88,"createDate":"2023-02-21T10:45:53.182869Z","updateDate":"0001-01-01T00:00:00"},{"id":"bbc8311f-e9fe-463d-8448-6a3fa6575304","name":"taha","stock":777,"price":88,"createDate":"2023-02-21T10:46:40.164251Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:46:40.230 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=2&size=5 - - - 200 - application/json;+charset=utf-8 38.2624ms
+2023-02-21 13:46:50.334 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=1&size=5 - -
+2023-02-21 13:46:50.336 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:50.339 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:50.340 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:46:50.342 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=1&size=5 - - - 204 - - 7.4156ms
+2023-02-21 13:46:50.343 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=1&size=5 - -
+2023-02-21 13:46:50.344 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:50.346 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:50.348 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:46:50.349 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:46:50.419 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:46:50.426 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-02-21 13:46:50.430 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:46:50.433 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:46:50.434 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 82.9071ms
+2023-02-21 13:46:50.436 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:46:50.437 +03:00 [INF] ResponseBody: {"totalCount":15,"products":[{"id":"fdf8e8a4-9977-42c4-bb26-137125ca7897","name":"a","stock":5,"price":5,"createDate":"2023-02-20T12:16:30.215247Z","updateDate":"0001-01-01T00:00:00"},{"id":"2612c2e2-8072-4005-8a8f-f7753743df75","name":"w","stock":5,"price":5,"createDate":"2023-02-20T12:20:19.146589Z","updateDate":"0001-01-01T00:00:00"},{"id":"0c4b7d57-996f-4c2a-afb3-733b940bd31e","name":"w","stock":7,"price":7,"createDate":"2023-02-20T12:22:30.473289Z","updateDate":"0001-01-01T00:00:00"},{"id":"84efac45-aea1-4188-9d80-04a6691a2715","name":"a","stock":7,"price":7,"createDate":"2023-02-20T12:23:16.92864Z","updateDate":"0001-01-01T00:00:00"},{"id":"f44fcc8a-0542-4d82-817f-c019cd23fbfe","name":"zzz","stock":5,"price":5,"createDate":"2023-02-20T12:25:12.662287Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:46:50.439 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=1&size=5 - - - 200 - application/json;+charset=utf-8 95.8935ms
+2023-02-21 13:46:51.496 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=2&size=5 - -
+2023-02-21 13:46:51.497 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:51.499 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:51.501 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:46:51.502 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=2&size=5 - - - 204 - - 6.2422ms
+2023-02-21 13:46:51.503 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=2&size=5 - -
+2023-02-21 13:46:51.505 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:46:51.507 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:46:51.508 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:46:51.510 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:46:51.513 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:46:51.517 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:46:51.520 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:46:51.522 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:46:51.523 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 10.7885ms
+2023-02-21 13:46:51.524 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:46:51.526 +03:00 [INF] ResponseBody: {"totalCount":15,"products":[{"id":"402e603e-5139-4438-b11c-1922294553d1","name":"qw","stock":5,"price":5,"createDate":"2023-02-20T12:32:48.763505Z","updateDate":"0001-01-01T00:00:00"},{"id":"167999b2-2f79-49d0-a63f-3123d9c16f0f","name":"aaaaa","stock":7,"price":8,"createDate":"2023-02-21T10:43:03.375172Z","updateDate":"0001-01-01T00:00:00"},{"id":"3e5bac54-6859-421c-9023-bc33a3f2142b","name":"w","stock":777,"price":88,"createDate":"2023-02-21T10:45:39.986864Z","updateDate":"0001-01-01T00:00:00"},{"id":"d402d2b9-4474-4e2d-98e9-312e09e248db","name":"a","stock":777,"price":88,"createDate":"2023-02-21T10:45:53.182869Z","updateDate":"0001-01-01T00:00:00"},{"id":"bbc8311f-e9fe-463d-8448-6a3fa6575304","name":"taha","stock":777,"price":88,"createDate":"2023-02-21T10:46:40.164251Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:46:51.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=2&size=5 - - - 200 - application/json;+charset=utf-8 24.7271ms
+2023-02-21 13:48:09.030 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS Pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-21 13:48:09.551 +03:00 [INF] Now listening on: https://localhost:7216
+2023-02-21 13:48:09.553 +03:00 [INF] Now listening on: http://localhost:5165
+2023-02-21 13:48:09.560 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 13:48:09.562 +03:00 [INF] Hosting environment: Development
+2023-02-21 13:48:09.564 +03:00 [INF] Content root path: C:\Users\ASUS Pc\Desktop\VSProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\
+2023-02-21 13:48:11.013 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/swagger/index.html - -
+2023-02-21 13:48:11.767 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/swagger/index.html - - - 200 - text/html;charset=utf-8 763.1104ms
+2023-02-21 13:48:11.807 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/_framework/aspnetcore-browser-refresh.js - -
+2023-02-21 13:48:11.820 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 12.8170ms
+2023-02-21 13:48:11.901 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/_vs/browserLink - -
+2023-02-21 13:48:11.940 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.1664ms
+2023-02-21 13:48:12.167 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/swagger/v1/swagger.json - -
+2023-02-21 13:48:12.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 229.3205ms
+2023-02-21 13:49:05.350 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - -
+2023-02-21 13:49:05.371 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /product-hub/negotiate
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:49:05.381 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:05.389 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:49:05.395 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - - - 204 - - 44.7476ms
+2023-02-21 13:49:05.402 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - 0
+2023-02-21 13:49:05.403 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /product-hub/negotiate
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 0
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+X-Requested-With: XMLHttpRequest
+sec-ch-ua-mobile: [Redacted]
+x-signalr-user-agent: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:49:05.406 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:05.437 +03:00 [INF] Executing endpoint '/product-hub/negotiate'
+2023-02-21 13:49:05.474 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json
+Content-Length: 316
+2023-02-21 13:49:05.480 +03:00 [INF] Executed endpoint '/product-hub/negotiate'
+2023-02-21 13:49:05.484 +03:00 [INF] ResponseBody: {"negotiateVersion":1,"connectionId":"Oj4ZWvNEYRn_-Zc1bv242A","connectionToken":"dEcJ_gjycf07-7cJb0lmuA","availableTransports":[{"transport":"WebSockets","transferFormats":["Text","Binary"]},{"transport":"ServerSentEvents","transferFormats":["Text"]},{"transport":"LongPolling","transferFormats":["Text","Binary"]}]}
+2023-02-21 13:49:05.486 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 83.9827ms
+2023-02-21 13:49:05.520 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7216/product-hub?id=dEcJ_gjycf07-7cJb0lmuA - -
+2023-02-21 13:49:05.521 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /product-hub
+Connection: Upgrade
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Upgrade: websocket
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: [Redacted]
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2023-02-21 13:49:05.525 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:05.529 +03:00 [INF] Executing endpoint '/product-hub'
+2023-02-21 13:49:13.558 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - -
+2023-02-21 13:49:13.559 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /product-hub/negotiate
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:49:13.561 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:13.562 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:49:13.563 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - - - 204 - - 5.6881ms
+2023-02-21 13:49:13.565 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - 0
+2023-02-21 13:49:13.566 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /product-hub/negotiate
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 0
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+X-Requested-With: XMLHttpRequest
+sec-ch-ua-mobile: [Redacted]
+x-signalr-user-agent: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:49:13.568 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:13.572 +03:00 [INF] Executing endpoint '/product-hub/negotiate'
+2023-02-21 13:49:13.573 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json
+Content-Length: 316
+2023-02-21 13:49:13.575 +03:00 [INF] Executed endpoint '/product-hub/negotiate'
+2023-02-21 13:49:13.578 +03:00 [INF] ResponseBody: {"negotiateVersion":1,"connectionId":"_1dVZRxR9sCFLM0-YuydAA","connectionToken":"zZX7A1vzoPLJIlOgnF-UYA","availableTransports":[{"transport":"WebSockets","transferFormats":["Text","Binary"]},{"transport":"ServerSentEvents","transferFormats":["Text"]},{"transport":"LongPolling","transferFormats":["Text","Binary"]}]}
+2023-02-21 13:49:13.581 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/product-hub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 15.7626ms
+2023-02-21 13:49:13.616 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7216/product-hub?id=zZX7A1vzoPLJIlOgnF-UYA - -
+2023-02-21 13:49:13.617 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /product-hub
+Connection: Upgrade
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Upgrade: websocket
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: [Redacted]
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2023-02-21 13:49:13.620 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:13.622 +03:00 [INF] Executing endpoint '/product-hub'
+2023-02-21 13:49:15.076 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:49:15.078 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:49:15.080 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:15.081 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:49:15.082 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 5.8813ms
+2023-02-21 13:49:15.084 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:49:15.086 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:49:15.089 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:15.551 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:49:15.590 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:49:17.827 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:49:17.886 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-02-21 13:49:17.889 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-02-21 13:49:17.926 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:49:17.957 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:49:18.014 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:49:18.023 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 2422.7345ms
+2023-02-21 13:49:18.027 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:49:18.029 +03:00 [INF] ResponseBody: {"totalCount":15,"products":[{"id":"d69e8cfd-191a-4c0a-94fd-6fbcc1fc36fc","name":"Tabak","stock":5,"price":5,"createDate":"2023-01-30T17:05:34.149768Z","updateDate":"0001-01-01T00:00:00"},{"id":"2faeed0c-0b8b-4960-827b-8df4b09c80de","name":"Kasik","stock":5,"price":6,"createDate":"2023-02-12T13:37:05.400835Z","updateDate":"0001-01-01T00:00:00"},{"id":"43aa3a27-a55a-47e7-9ec9-f03949e9b02c","name":"Mause","stock":4,"price":380,"createDate":"2023-02-13T11:45:17.638455Z","updateDate":"0001-01-01T00:00:00"},{"id":"27b10a7b-b940-4174-aebd-7d4aebd986c7","name":"klavye","stock":5,"price":200,"createDate":"2023-02-15T11:56:02.72787Z","updateDate":"0001-01-01T00:00:00"},{"id":"5695e13f-0b38-466b-b153-db69fc653548","name":"denem","stock":5,"price":5,"createDate":"2023-02-20T12:09:17.339588Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:49:18.064 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 2980.3340ms
+2023-02-21 13:49:26.314 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products - -
+2023-02-21 13:49:26.315 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:49:26.317 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:26.318 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:49:26.320 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products - - - 204 - - 5.8152ms
+2023-02-21 13:49:26.321 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7216/api/products application/json 40
+2023-02-21 13:49:26.322 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 40
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:49:26.325 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:26.328 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API)'
+2023-02-21 13:49:26.332 +03:00 [INF] Route matched with {action = "Post", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(E_CommerceAPI.Application.Features.Commands.Products.CreateProduct.CreateProductCommandRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:49:26.347 +03:00 [INF] RequestBody: {"name":"Domates","stock":100,"price":2}
+2023-02-21 13:49:26.934 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Id", "CreateDate", "Name", "Price", "Stock", "UpdateDate")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2023-02-21 13:49:26.971 +03:00 [INF] New Product Added
+2023-02-21 13:49:26.982 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-02-21 13:49:26.984 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API) in 649.1188ms
+2023-02-21 13:49:26.985 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Post (E-CommerceAPI.API)'
+2023-02-21 13:49:26.987 +03:00 [INF] Response:
+StatusCode: 200
+2023-02-21 13:49:26.988 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7216/api/products application/json 40 - 200 0 - 667.3724ms
+2023-02-21 13:49:26.995 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:49:26.997 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:49:26.999 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:27.000 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-02-21 13:49:27.002 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7216/api/products?page=0&size=5 - - - 204 - - 6.8096ms
+2023-02-21 13:49:27.003 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - -
+2023-02-21 13:49:27.005 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-02-21 13:49:27.006 +03:00 [INF] CORS policy execution successful.
+2023-02-21 13:49:27.010 +03:00 [INF] Executing endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:49:27.012 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryRequest) on controller E_CommerceAPI.API.Controllers.ProductsController (E-CommerceAPI.API).
+2023-02-21 13:49:27.029 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2023-02-21 13:49:27.036 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreateDate", p."UpdateDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-02-21 13:49:27.039 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceAPI.Application.Features.Queries.Products.GetAllProduct.GetAllProductQueryResponse'.
+2023-02-21 13:49:27.042 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 13:49:27.045 +03:00 [INF] Executed action E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API) in 30.2754ms
+2023-02-21 13:49:27.049 +03:00 [INF] Executed endpoint 'E_CommerceAPI.API.Controllers.ProductsController.Get (E-CommerceAPI.API)'
+2023-02-21 13:49:27.050 +03:00 [INF] ResponseBody: {"totalCount":16,"products":[{"id":"d69e8cfd-191a-4c0a-94fd-6fbcc1fc36fc","name":"Tabak","stock":5,"price":5,"createDate":"2023-01-30T17:05:34.149768Z","updateDate":"0001-01-01T00:00:00"},{"id":"2faeed0c-0b8b-4960-827b-8df4b09c80de","name":"Kasik","stock":5,"price":6,"createDate":"2023-02-12T13:37:05.400835Z","updateDate":"0001-01-01T00:00:00"},{"id":"43aa3a27-a55a-47e7-9ec9-f03949e9b02c","name":"Mause","stock":4,"price":380,"createDate":"2023-02-13T11:45:17.638455Z","updateDate":"0001-01-01T00:00:00"},{"id":"27b10a7b-b940-4174-aebd-7d4aebd986c7","name":"klavye","stock":5,"price":200,"createDate":"2023-02-15T11:56:02.72787Z","updateDate":"0001-01-01T00:00:00"},{"id":"5695e13f-0b38-466b-b153-db69fc653548","name":"denem","stock":5,"price":5,"createDate":"2023-02-20T12:09:17.339588Z","updateDate":"0001-01-01T00:00:00"}]}
+2023-02-21 13:49:27.052 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 49.2446ms

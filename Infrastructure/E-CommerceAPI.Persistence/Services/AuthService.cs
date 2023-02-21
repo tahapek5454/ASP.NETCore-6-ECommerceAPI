@@ -98,7 +98,7 @@ namespace E_CommerceAPI.Persistence.Services
 
 
             Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
-            await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 15);
+            await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 300);
 
             return token;
         }
@@ -123,7 +123,7 @@ namespace E_CommerceAPI.Persistence.Services
                 // yetkiler belirlenecek
                 // token olusacak
                 Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
-                await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 15);
+                await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 300);
                 return token;
             }
             else
@@ -138,7 +138,7 @@ namespace E_CommerceAPI.Persistence.Services
             if(user?.RefreshTokenEndDate > DateTime.UtcNow) {
 
                 Token token = _tokenHandler.CreateAccessToken(15, user);
-                await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 15);
+                await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 300);
                     
                 return token;
             }
