@@ -1,5 +1,5 @@
-﻿using E_Commerce.SignalR.HubServices;
-using E_CommerceAPI.Application.Abstractions.Hubs;
+﻿using E_CommerceAPI.Application.Abstractions.Hubs;
+using E_CommerceAPI.SignalR.HubServices;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Commerce.SignalR
+namespace E_CommerceAPI.SignalR
 {
     public static class ServiceRegistration
     {

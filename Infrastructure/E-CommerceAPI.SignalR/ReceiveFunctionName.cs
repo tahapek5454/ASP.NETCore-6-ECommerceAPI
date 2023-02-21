@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Commerce.SignalR
+namespace E_CommerceAPI.SignalR
 {
     public static class ReceiveFunctionName
     {
-        public const string ProductAddedMessage = "receiveProductAddedMessage"; 
+        public const string ProductAddedMessage = "receiveProductAddedMessage";
     }
 }

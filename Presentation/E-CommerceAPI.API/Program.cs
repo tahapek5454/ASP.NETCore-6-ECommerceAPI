@@ -1,4 +1,4 @@
-using E_Commerce.SignalR;
+
 using E_CommerceAPI.API.Extensions;
 using E_CommerceAPI.API.OwnConfigurations.ColumnWriters;
 using E_CommerceAPI.Application;
@@ -8,6 +8,7 @@ using E_CommerceAPI.Infrastructure.Filters;
 using E_CommerceAPI.Infrastructure.Services.Storage.GCP;
 using E_CommerceAPI.Infrastructure.Services.Storage.Local;
 using E_CommerceAPI.Persistence;
+using E_CommerceAPI.SignalR;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpLogging;

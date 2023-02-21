@@ -1,4 +1,4 @@
-﻿using E_Commerce.SignalR.Hubs;
+﻿using E_CommerceAPI.SignalR.Hubs;
 using Microsoft.AspNetCore.Builder;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Commerce.SignalR
+namespace E_CommerceAPI.SignalR
 {
     public static class HubRegistration
     {

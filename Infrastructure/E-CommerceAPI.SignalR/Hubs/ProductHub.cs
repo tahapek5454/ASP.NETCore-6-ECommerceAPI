@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Commerce.SignalR.Hubs
+namespace E_CommerceAPI.SignalR.Hubs
 {
-    public class ProductHub: Hub
+    public class ProductHub : Hub
     {
     }
 }

@@ -1,5 +1,5 @@
-﻿using E_Commerce.SignalR.Hubs;
-using E_CommerceAPI.Application.Abstractions.Hubs;
+﻿using E_CommerceAPI.Application.Abstractions.Hubs;
+using E_CommerceAPI.SignalR.Hubs;
 using Microsoft.AspNetCore.SignalR;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Commerce.SignalR.HubServices
+namespace E_CommerceAPI.SignalR.HubServices
 {
     public class ProductHubService : IProductHubService
     {
@@ -23,7 +23,7 @@ namespace E_Commerce.SignalR.HubServices
         {
             // clientlarda ilgili fonksiton tetiklenecek
             // fonksiyon adı, mesaj
-            await _context.Clients.All.SendAsync(ReceiveFunctionName.ProductAddedMessage,message);
+            await _context.Clients.All.SendAsync(ReceiveFunctionName.ProductAddedMessage, message);
         }
     }
 }

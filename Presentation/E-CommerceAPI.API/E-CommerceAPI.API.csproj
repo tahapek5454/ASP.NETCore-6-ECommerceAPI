@@ -21,9 +21,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\E-CommerceAPI.Application\E-CommerceAPI.Application.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\E-Commerce.SignalR\E-CommerceAPI.SignalR.csproj" />
     <ProjectReference Include="..\..\Infrastructure\E-CommerceAPI.Infrastructure\E-CommerceAPI.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\E-CommerceAPI.Persistence\E-CommerceAPI.Persistence.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\E-CommerceAPI.SignalR\E-CommerceAPI.SignalR.csproj" />
   </ItemGroup>
 
   <ItemGroup>
