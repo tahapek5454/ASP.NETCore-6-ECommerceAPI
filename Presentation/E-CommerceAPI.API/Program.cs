@@ -29,6 +29,7 @@ builder.Services.AddInfrastructureServices();
 builder.Services.AddStorage<GCPStorage>();  // -> ozel dosya kaydý için hangi storageýn kullanýlacagýný atýyoruz -> alternatifi de var anlarsýn :)
 builder.Services.AddAplicationServices();
 builder.Services.AddSignalRServices(); // -> signalr
+builder.Services.AddHttpContextAccessor(); // clienttan gelen request neticesinde olusturulan httpContex nesnesine katmanlardaki classlar uzerinden (business logic) erismemizi saglayan servis
 
 
 //Cors politikalarinin duzenleyecegimiz kisim cors politikasi browserdan gelen isteklerin hangi turlerinin kabul edilecegini soyleyecegiz
@@ -45,7 +46,7 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
 // nerelere yazýlacagý , veritabaný connection stringi autocreati ve hangi kolonlarý bulundurmasý gerektigini soyledik
 Logger log = new LoggerConfiguration()
     .WriteTo.Console()
-    .WriteTo.File("logs/log.txt")
+    //.WriteTo.File("logs/log.txt")
     .WriteTo.PostgreSQL(
         builder.Configuration.GetConnectionString("PostgreSQL"),
         "Logs",

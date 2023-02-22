@@ -22,6 +22,10 @@ using E_CommerceAPI.Domain.Entities.Identity;
 using E_CommerceAPI.Application.Abstractions.Services;
 using E_CommerceAPI.Persistence.Services;
 using E_CommerceAPI.Application.Abstractions.Services.Authentications;
+using E_CommerceAPI.Application.Repositories.BasketRepository;
+using E_CommerceAPI.Persistence.Repositories.BasketRepository;
+using E_CommerceAPI.Application.Repositories.BasketItemRepository;
+using E_CommerceAPI.Persistence.Repositories.BasketItemRepository;
 
 namespace E_CommerceAPI.Persistence
 {
@@ -71,7 +75,16 @@ namespace E_CommerceAPI.Persistence
             serviceCollection.AddScoped<IInternalAuthenticationService, AuthService>();
             serviceCollection.AddScoped<IExternalAuthenticationService, AuthService>();
 
-           
+            serviceCollection.AddScoped<IBasketReadRepository, BasketReadRepository>();
+            serviceCollection.AddScoped<IBasketWriteRepository, BasketWriteRepository>();
+
+            serviceCollection.AddScoped<IBasketItemReadRepository, BasketItemReadRepository>();
+            serviceCollection.AddScoped<IBasketItemWriteRepository, BasketItemWriteRepository>();
+
+            serviceCollection.AddScoped<IBasketService, BasketService>();
+
+
+
 
         }
     }

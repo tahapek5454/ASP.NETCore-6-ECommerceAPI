@@ -13,6 +13,7 @@ namespace E_CommerceAPI.Domain.Entities.Identity
         // Identity turunu string olarak belirledik o arkada guid uretecektir -> Tabloları db ye bildirmelisin
         public string Name { get; set; }
         public string Surname { get; set; }
+        public ICollection<Basket> Baskets { get; set; }
 
         //refresh Token le ilgili propertyler
         public string? RefreshToken { get; set; }

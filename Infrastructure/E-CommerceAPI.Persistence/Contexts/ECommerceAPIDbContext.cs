@@ -24,11 +24,28 @@ namespace E_CommerceAPI.Persistence.Contexts
         public DbSet<Product> Products { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
 
         // Burda kalıtımdan geliyor ya tek bir tabloda gerekli ayrımlar yapılarak olusucak(Table Per Hierarchy)
         public DbSet<OwnFile> OwnFiles { get; set; }
         public DbSet<ProductImageFile> ProductImageFiles { get; set; }
         public DbSet<InvoiceFile> InvoiceFiles { get; set; }
+
+
+        // Birebir iliski tanımlanacaksa bu islem uygulanmalidir
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Order>()
+                .HasKey(o => o.Id);
+
+            builder.Entity<Basket>()
+                .HasOne(b => b.Order)
+                .WithOne(o => o.Basket)
+                .HasForeignKey<Order>(o => o.Id);
+
+            base.OnModelCreating(builder);
+        }
 
 
         // bizim DbContex islemleri için olusacak interceptor -> model olusurke otomarik createDate' deger aticaz vb.

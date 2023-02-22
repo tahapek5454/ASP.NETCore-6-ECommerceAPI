@@ -14,5 +14,6 @@ namespace E_CommerceAPI.Domain.Entities
         public decimal Price { get; set; }
         public ICollection<Order> Orders { get; set; } = new List<Order>(); // birden fazla orderda bulunabilir
         public ICollection<ProductImageFile> ProductImageFiles { get; set; } // birden fazla foto bulunabilir
+        public ICollection<BasketItem> BasketItems { get; set; } // birden fazla basket ıtemda bulunabilir
     }
 }

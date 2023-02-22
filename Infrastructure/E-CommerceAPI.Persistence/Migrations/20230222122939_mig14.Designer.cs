@@ -3,6 +3,7 @@ using System;
 using E_CommerceAPI.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ECommerceAPI.Persistence.Migrations
 {
     [DbContext(typeof(ECommerceAPIDbContext))]
-    partial class ECommerceAPIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230222122939_mig14")]
+    partial class mig14
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -203,11 +206,15 @@ namespace ECommerceAPI.Persistence.Migrations
             modelBuilder.Entity("E_CommerceAPI.Domain.Entities.Order", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
                     b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<Guid>("BasketId")
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("timestamp with time zone");
@@ -223,6 +230,9 @@ namespace ECommerceAPI.Persistence.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BasketId")
+                        .IsUnique();
 
                     b.HasIndex("CustomerId");
 
@@ -478,15 +488,15 @@ namespace ECommerceAPI.Persistence.Migrations
 
             modelBuilder.Entity("E_CommerceAPI.Domain.Entities.Order", b =>
                 {
-                    b.HasOne("E_CommerceAPI.Domain.Entities.Customer", "Customer")
-                        .WithMany("Orders")
-                        .HasForeignKey("CustomerId")
+                    b.HasOne("E_CommerceAPI.Domain.Entities.Basket", "Basket")
+                        .WithOne("Order")
+                        .HasForeignKey("E_CommerceAPI.Domain.Entities.Order", "BasketId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("E_CommerceAPI.Domain.Entities.Basket", "Basket")
-                        .WithOne("Order")
-                        .HasForeignKey("E_CommerceAPI.Domain.Entities.Order", "Id")
+                    b.HasOne("E_CommerceAPI.Domain.Entities.Customer", "Customer")
+                        .WithMany("Orders")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
