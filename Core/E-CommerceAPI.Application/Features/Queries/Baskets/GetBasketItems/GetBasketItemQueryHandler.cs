@@ -22,7 +22,7 @@ namespace E_CommerceAPI.Application.Features.Queries.Baskets.GetBasketItems
 
             return basketItems.Select(ba => new GetBasketItemQueryResponse()
             {
-                BasketItemId = ba.BasketId.ToString(),
+                BasketItemId = ba.Id.ToString(),
                 Name = ba.Product.Name,
                 Price = ba.Product.Price,
                 Quantity = ba.Quantity
