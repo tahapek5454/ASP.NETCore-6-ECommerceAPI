@@ -142,6 +142,15 @@ namespace E_CommerceAPI.Persistence.Services
                 _basketItem.Quantity = basketItem.Quantity;
                 await _basketItemWriteRepository.SaveAsync();
             }
+        }   
+        public  Basket? GetUserActiveBasket
+        {
+            get{
+                Basket? targetBasket = ContexUser().Result;
+
+                return targetBasket;
+            
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ namespace E_CommerceAPI.Domain.Entities
         public string Name { get; set; }
         public int Stock { get; set; }
         public decimal Price { get; set; }
-        public ICollection<Order> Orders { get; set; } = new List<Order>(); // birden fazla orderda bulunabilir
+       // public ICollection<Order> Orders { get; set; } = new List<Order>(); // birden fazla orderda bulunabilir
         public ICollection<ProductImageFile> ProductImageFiles { get; set; } // birden fazla foto bulunabilir
         public ICollection<BasketItem> BasketItems { get; set; } // birden fazla basket ıtemda bulunabilir
     }

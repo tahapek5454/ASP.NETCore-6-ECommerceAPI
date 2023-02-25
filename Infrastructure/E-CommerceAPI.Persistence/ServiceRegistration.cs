@@ -83,6 +83,8 @@ namespace E_CommerceAPI.Persistence
 
             serviceCollection.AddScoped<IBasketService, BasketService>();
 
+            serviceCollection.AddScoped<IOrderService, OrderService>();
+
 
 
 

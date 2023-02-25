@@ -14,6 +14,7 @@ namespace E_CommerceAPI.SignalR
         public static void AddSignalRServices(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddTransient<IProductHubService, ProductHubService>();
+            serviceCollection.AddTransient<IOrderHubService, OrderHubService>();
             serviceCollection.AddSignalR();
         }
     }

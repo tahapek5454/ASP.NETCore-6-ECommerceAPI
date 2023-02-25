@@ -10,6 +10,6 @@ namespace E_CommerceAPI.Domain.Entities
     public class Customer:BaseEntity
     {
         public string Name { get; set; }   
-        public ICollection<Order> Orders { get; set; } // birden fazla orderda bulunabilir
+      //  public ICollection<Order> Orders { get; set; } // birden fazla orderda bulunabilir
     }
 }

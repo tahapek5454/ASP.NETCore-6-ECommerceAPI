@@ -15,6 +15,7 @@ namespace E_CommerceAPI.SignalR
             // hublarımızın endpointlerini verecegiz
             // birden fazla olabilecegi için webapplicationu extension ettik program.cs i sisirmedik
             webApplication.MapHub<ProductHub>("/product-hub");
+            webApplication.MapHub<OrderHub>("/order-hub");
         }
     }
 }
