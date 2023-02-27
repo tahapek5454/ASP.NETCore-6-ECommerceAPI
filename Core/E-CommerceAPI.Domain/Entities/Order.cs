@@ -14,6 +14,8 @@ namespace E_CommerceAPI.Domain.Entities
         //public ICollection<Product> Products { get; set; } = new List<Product>(); // birden fazla producta sahip olabilirsin
         //public int CustomerId { get; set; }  // bunu vermesek de alttaki yapılan tanımlamadan dolayı vertabanında stun olusurdu
         // public Customer Customer { get; set; } // tek bir customer'ın olabilir
+
+        public string OrderCode { get; set; }
         public Basket Basket { get; set; }
     }
 }

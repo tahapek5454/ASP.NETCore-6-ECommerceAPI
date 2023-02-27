@@ -39,6 +39,11 @@ namespace E_CommerceAPI.Persistence.Contexts
             builder.Entity<Order>()
                 .HasKey(o => o.Id);
 
+            // indexledik ve uniqledik
+            builder.Entity<Order>()
+                .HasIndex(o => o.OrderCode)
+                .IsUnique();
+
             builder.Entity<Basket>()
                 .HasOne(b => b.Order)
                 .WithOne(o => o.Basket)
