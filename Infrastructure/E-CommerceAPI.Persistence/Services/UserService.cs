@@ -2,6 +2,7 @@
 using E_CommerceAPI.Application.DTOs.Users;
 using E_CommerceAPI.Application.Exceptions;
 using E_CommerceAPI.Application.Features.Commands.AppUsers.CreateUser;
+using E_CommerceAPI.Application.Helpers;
 using E_CommerceAPI.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -55,6 +56,28 @@ namespace E_CommerceAPI.Persistence.Services
 
                 return response;
                 // throw new UserCreateFailedException(UserCreateFailedException.Message);
+            }
+        }
+
+        public async Task UpdatePasswordAsync(string userId, string resetToken, string newPassword)
+        {
+            AppUser user = await _userManager.FindByIdAsync(userId);
+
+            if(user != null)
+            {
+                resetToken = resetToken.UrlDecode();
+                // userManagerdan yararlanarak degistirme islemi
+                IdentityResult result = await _userManager.ResetPasswordAsync(user, resetToken, newPassword);
+                if(result.Succeeded)
+                {
+                    // kullanıcıya karsılık gelen security stamp degerini ezip basta belirtilen tokenin tek bir sefer kullanılmasına olanak tanıyoruz
+                    // token security stamp degerine gore esleniyor
+                    await _userManager.UpdateSecurityStampAsync(user);
+                }
+                else
+                {
+                    throw new PasswordChangeFieldException(PasswordChangeFieldException.Message);
+                }
             }
         }
 

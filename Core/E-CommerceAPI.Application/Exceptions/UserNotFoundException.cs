@@ -8,7 +8,7 @@ namespace E_CommerceAPI.Application.Exceptions
 {
     public class UserNotFoundException : Exception
     {
-        public static string Message { get; private set; } = "Kullanıcı Adı ya da Sifre Hatali";
+        public static string Message { get; private set; } = "Kullanici Adi ya da Sifre Hatali";
         public UserNotFoundException()
         {
         }

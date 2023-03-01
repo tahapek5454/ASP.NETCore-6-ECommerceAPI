@@ -52,6 +52,21 @@ namespace E_CommerceAPI.Infrastructure.Services
           await SendMessageAsync(new string[] {to}, subject, body, isBodyHtml);
         }
 
-      
+        public async Task SendPasswordResetMailAsync(string to, string userId, string resetToken)
+        {
+            StringBuilder mail = new();
+
+            mail.AppendLine("<strong>Merhabalar</strong> <br> Eger bir sifre talebinde bulunduysaniz lutfen assagidaki linke tiklayiniz aksi halde maili dikkate almayiniz." +
+                " <br> <strong>");
+            mail.AppendLine("<a target = \"_blank\" href=\""+ _configuration["AngularClientUrl"] + "/update-password/"+ userId + "/"+ resetToken + "\""+ ">");
+            mail.AppendLine("Yeni sifre talebi için tiklayiniz. </a> </strong>");
+            mail.AppendLine("<br><br>");
+            mail.AppendLine("<strong>Saygılarımla... E-Commerce Created By Taha Pek </strong>");
+
+         
+            await SendMessageAsync(to, "Sifre Yenileme Islemi", mail.ToString());
+
+
+        }
     }
 }

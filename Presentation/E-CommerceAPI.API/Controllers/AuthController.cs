@@ -1,6 +1,9 @@
 ﻿using E_CommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin;
 using E_CommerceAPI.Application.Features.Commands.AppUsers.LoginUser;
+using E_CommerceAPI.Application.Features.Commands.AppUsers.PasswordReset;
 using E_CommerceAPI.Application.Features.Commands.AppUsers.RefreshTokens;
+using E_CommerceAPI.Application.Features.Commands.AppUsers.UpdatePassword;
+using E_CommerceAPI.Application.Features.Commands.AppUsers.VerifyResetToken;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -43,5 +46,22 @@ namespace E_CommerceAPI.API.Controllers
 
             return Ok(response);
         }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> PasswordReset(PasswordResetCommandRequest passwordResetCommandRequest)
+        {
+            PasswordResetCommandResponse response = await _mediator.Send(passwordResetCommandRequest);
+            return Ok(response);
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> VerifyResetToken(VerifyResetTokenCommandRequest verifyResetTokenCommandRequest)
+        {
+            VerifyResetTokenCommandResponse response = await _mediator.Send(verifyResetTokenCommandRequest);
+
+            return Ok(response);
+        }
+
+       
     }
 }

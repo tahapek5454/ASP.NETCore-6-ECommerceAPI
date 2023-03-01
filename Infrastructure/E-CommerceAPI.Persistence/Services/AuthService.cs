@@ -4,10 +4,12 @@ using E_CommerceAPI.Application.DTOs;
 using E_CommerceAPI.Application.DTOs.GoogleAuthentications;
 using E_CommerceAPI.Application.Exceptions;
 using E_CommerceAPI.Application.Features.Commands.AppUsers.LoginUser;
+using E_CommerceAPI.Application.Helpers;
 using E_CommerceAPI.Domain.Entities.Identity;
 using Google.Apis.Auth;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
@@ -27,13 +29,15 @@ namespace E_CommerceAPI.Persistence.Services
         private readonly SignInManager<AppUser> _signInManager; // -> bu da ıdentityden gelir sign işlemleri için hizmet veren servis
         private readonly ITokenHandler _tokenHandler;
         private readonly IUserService _userService; // refreshToken yenilemesi için
-        public AuthService(IConfiguration configuration, UserManager<AppUser> userManager, ITokenHandler tokenHandler, SignInManager<AppUser> signInManager, IUserService userService)
+        private readonly IMailService _mailService; // resetPasswor
+        public AuthService(IConfiguration configuration, UserManager<AppUser> userManager, ITokenHandler tokenHandler, SignInManager<AppUser> signInManager, IUserService userService, IMailService mailService)
         {
             _configuration = configuration;
             _userManager = userManager;
             _tokenHandler = tokenHandler;
             _signInManager = signInManager;
             _userService = userService;
+            _mailService = mailService;
         }
 
         public async Task<Token> GoogleLoginAsync(GoogleAuthenticationDTO model, int accessTokenLifeTime)
@@ -132,6 +136,26 @@ namespace E_CommerceAPI.Persistence.Services
             }
         }
 
+        public async Task PasswordResetAsync(string email)
+        {
+            AppUser user = await _userManager.FindByEmailAsync(email);
+            if(user != null)
+            {
+                // ilgili usera ozel sifre degistirme tokenini
+                string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+                //tokenda http pratakollerine takılabilecek ozel karakterler olabilir
+                // onları guzel cevirmek lazım
+                //byte[] tokenBytes = Encoding.UTF8.GetBytes(resetToken);
+                //resetToken = WebEncoders.Base64UrlEncode(tokenBytes);
+
+                resetToken = resetToken.UrlEncode();
+
+                await _mailService.SendPasswordResetMailAsync(email,user.Id, resetToken);
+            }
+            
+        }
+
         public async Task<Token> RefreshTokenLoginAsync(string refreshToken)
         {
             AppUser? user = await _userManager.Users.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
@@ -148,6 +172,33 @@ namespace E_CommerceAPI.Persistence.Services
 
             }
 
+        }
+
+        public async Task<bool> VerifyResetTokenAsync(string userId, string resetToken)
+        {
+            // id ye gore cektik
+            AppUser user = await _userManager.FindByIdAsync(userId);
+
+            if(user != null ) {
+
+                // kullanıcı varsa encod ettigimiz islmeleri decode etttik
+                //byte[] tokenBytes = WebEncoders.Base64UrlDecode(resetToken);
+                //resetToken = Encoding.UTF8.GetString(tokenBytes);
+                resetToken = resetToken.UrlDecode();
+
+                // identity managerdan yararlanarak dogruladık dogrulandıysa true else false
+                bool result = await _userManager.VerifyUserTokenAsync(
+                        user,
+                        _userManager.Options.Tokens.PasswordResetTokenProvider,
+                        "ResetPassword",
+                        resetToken
+                    );
+
+                return result;
+                    
+            }
+
+            return false;
         }
     }
 }

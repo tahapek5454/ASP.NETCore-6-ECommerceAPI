@@ -26,6 +26,7 @@ using E_CommerceAPI.Application.Repositories.BasketRepository;
 using E_CommerceAPI.Persistence.Repositories.BasketRepository;
 using E_CommerceAPI.Application.Repositories.BasketItemRepository;
 using E_CommerceAPI.Persistence.Repositories.BasketItemRepository;
+using Microsoft.AspNetCore.Identity;
 
 namespace E_CommerceAPI.Persistence
 {
@@ -47,7 +48,9 @@ namespace E_CommerceAPI.Persistence
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
 
-            }).AddEntityFrameworkStores<ECommerceAPIDbContext>();
+            }).AddEntityFrameworkStores<ECommerceAPIDbContext>()
+            .AddDefaultTokenProviders();
+            // AddDefaulTokenProvider sifremi degistirdeimdei resettoken olusturmaya yarar yoksa hata aliriz burada tokeni identity kutuphanesi uretecek
 
             //AddDbContexin lifecyl'ı scope oldugundan scope ile devam edelim -> scope her requeste ozel injection yapar ve bitince dispose eder
 
