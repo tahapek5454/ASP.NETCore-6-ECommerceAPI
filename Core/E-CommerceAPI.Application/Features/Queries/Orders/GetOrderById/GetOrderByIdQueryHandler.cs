@@ -31,6 +31,7 @@ namespace E_CommerceAPI.Application.Features.Queries.Orders.GetOrderById
                 CreatedDate = orderDTO.CreatedDate,
                 Description = orderDTO.Description,
                 OrderCode = orderDTO.OrderCode,
+                Completed = orderDTO.Completed,
             };
         }
     }

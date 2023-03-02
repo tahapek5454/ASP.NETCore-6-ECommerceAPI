@@ -13,5 +13,6 @@ namespace E_CommerceAPI.Application.Abstractions.Services
 
         Task<ListOrderDTO> GetAllOrdersAsync(int page, int size);
         Task<GetOrderDTO> GetOrderByIdAsync(string id);
+        Task CompleteOrderAsync(string id);
     }
 }

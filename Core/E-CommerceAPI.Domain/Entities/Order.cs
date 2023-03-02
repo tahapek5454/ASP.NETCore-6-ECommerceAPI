@@ -17,5 +17,6 @@ namespace E_CommerceAPI.Domain.Entities
 
         public string OrderCode { get; set; }
         public Basket Basket { get; set; }
+        public CompletedOrder CompletedOrder { get; set; }
     }
 }

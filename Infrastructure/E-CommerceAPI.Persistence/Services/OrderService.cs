@@ -1,6 +1,9 @@
 ﻿using E_CommerceAPI.Application.Abstractions.Services;
 using E_CommerceAPI.Application.DTOs.Orders;
+using E_CommerceAPI.Application.Exceptions;
+using E_CommerceAPI.Application.Repositories.CompletedOrderRepository;
 using E_CommerceAPI.Application.Repositories.OrderRepository;
+using E_CommerceAPI.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,12 +17,34 @@ namespace E_CommerceAPI.Persistence.Services
     {
         private readonly IOrderWriteRepository _orderWriteRepository;
         private readonly IOrderReadRepository _orderReadRepository;
+        private readonly ICompletedOrderWriteRepository _completedOrderWriteRepository;
+        private readonly ICompletedOrderReadRepository _completedOrderReadRepository;
 
 
-        public OrderService(IOrderWriteRepository orderWriteRepository, IOrderReadRepository orderReadRepository)
+        public OrderService(IOrderWriteRepository orderWriteRepository, IOrderReadRepository orderReadRepository, ICompletedOrderWriteRepository completedOrderWriteRepository, ICompletedOrderReadRepository completedOrderReadRepository)
         {
             _orderWriteRepository = orderWriteRepository;
             _orderReadRepository = orderReadRepository;
+            _completedOrderWriteRepository = completedOrderWriteRepository;
+            _completedOrderReadRepository = completedOrderReadRepository;
+        }
+
+        public async Task CompleteOrderAsync(string id)
+        {
+            Order order = await _orderReadRepository.GetByIdAsync(id);
+            if(order != null)
+            {
+                await _completedOrderWriteRepository.AddAsync(new CompletedOrder()
+                {
+                    OrderId = Guid.Parse(id)
+                });
+
+                _ = await _completedOrderWriteRepository.SaveAsync();
+            }
+            else
+            {
+                throw new OrderNotFoundException(OrderNotFoundException.Message);
+            }
         }
 
         public async Task CreateOrderAsync(CreateOrderDTO createOrderDTO)
@@ -41,25 +66,43 @@ namespace E_CommerceAPI.Persistence.Services
         {
             int totalCount = _orderReadRepository.GetAll(false).Count();
 
-            var query = await _orderReadRepository.Table.Include(o => o.Basket)
+            var query = _orderReadRepository.Table.Include(o => o.Basket)
                 .ThenInclude(b => b.User)
                 .Include(o => o.Basket)
                 .ThenInclude(b => b.BasketItems)
-                .ThenInclude(bi => bi.Product)
-                .Select(o => new
+                .ThenInclude(bi => bi.Product);
+
+          
+
+            var data = query.Skip(page * size).Take(size);
+
+
+            var data2 = from order in data
+                     join completedOrder in _completedOrderReadRepository.Table
+                     on order.Id equals completedOrder.OrderId into co
+                     from _co in co.DefaultIfEmpty()
+                     select new
+                     {
+                         order.Id,
+                         order.CreateDate,
+                         order.OrderCode,
+                         order.Basket,
+                         Completed = _co != null ? true : false
+                     };
+
+
+            return new()
+            {
+                TotalOrderCount = totalCount,
+                Orders = data2.Select(o => new
                 {
                     Id = o.Id.ToString(),
                     CreatedDate = o.CreateDate,
                     OrderCode = o.OrderCode,
                     TotalPrice = o.Basket.BasketItems.Sum(bi => bi.Product.Price * bi.Quantity),
-                    UserName = o.Basket.User.UserName
-                }).Skip(page * size).Take(size).ToListAsync();
-                
-
-            return new()
-            {
-                TotalOrderCount = totalCount,
-                Orders = query
+                    UserName = o.Basket.User.UserName,
+                    Completed = o.Completed,  
+                }).ToList(),
 
             };
 
@@ -67,25 +110,43 @@ namespace E_CommerceAPI.Persistence.Services
 
         public async Task<GetOrderDTO> GetOrderByIdAsync(string id)
         {
-            var data = await _orderReadRepository.Table
+            var data =  _orderReadRepository.Table
                     .Include(o => o.Basket)
                     .ThenInclude(b => b.BasketItems)
-                    .ThenInclude(bi => bi.Product)
-                    .FirstOrDefaultAsync(o => o.Id == Guid.Parse(id));
+                    .ThenInclude(bi => bi.Product);
+
+            var data2 = await (from order in data
+                        join completedOrder in _completedOrderReadRepository.Table
+                        on order.Id equals completedOrder.OrderId into co
+                        from _co in co.DefaultIfEmpty()
+                        select new
+                        {
+
+                            order.Id,
+                            order.CreateDate,
+                            order.OrderCode,
+                            order.Basket,
+                            Completed = _co != null ? true : false,
+                            Address = order.Address,
+                            Description = order.Description
+
+                        }).FirstOrDefaultAsync(o => o.Id == Guid.Parse(id)); 
+                   
 
             return new GetOrderDTO()
             {
-                Id = data.Id.ToString(),
-                Address = data.Address,
-                BasketItems = data.Basket.BasketItems.Select(bi => new
+                Id = data2.Id.ToString(),
+                Address = data2.Address,
+                BasketItems = data2.Basket.BasketItems.Select(bi => new
                 {
                     bi.Product.Name,
                     bi.Product.Price,
                     bi.Quantity
                 }),
-                CreatedDate = data.CreateDate,
-                Description = data.Description,
-                OrderCode = data.OrderCode,
+                CreatedDate = data2.CreateDate,
+                Description = data2.Description,
+                OrderCode = data2.OrderCode,
+                Completed = data2.Completed,
             };
            
         }

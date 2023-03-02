@@ -31,6 +31,7 @@ namespace E_CommerceAPI.Persistence.Contexts
         public DbSet<OwnFile> OwnFiles { get; set; }
         public DbSet<ProductImageFile> ProductImageFiles { get; set; }
         public DbSet<InvoiceFile> InvoiceFiles { get; set; }
+        public DbSet<CompletedOrder> CompletedOrders { get; set; }
 
 
         // Birebir iliski tanımlanacaksa bu islem uygulanmalidir
@@ -48,6 +49,11 @@ namespace E_CommerceAPI.Persistence.Contexts
                 .HasOne(b => b.Order)
                 .WithOne(o => o.Basket)
                 .HasForeignKey<Order>(o => o.Id);
+
+            builder.Entity<Order>()
+                .HasOne(o => o.CompletedOrder)
+                .WithOne(c => c.Order)
+                .HasForeignKey<CompletedOrder>(c => c.OrderId);
 
             base.OnModelCreating(builder);
         }
