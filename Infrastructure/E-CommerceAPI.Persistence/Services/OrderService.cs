@@ -29,9 +29,10 @@ namespace E_CommerceAPI.Persistence.Services
             _completedOrderReadRepository = completedOrderReadRepository;
         }
 
-        public async Task CompleteOrderAsync(string id)
+        public async Task<CompletedOrderDTO> CompleteOrderAsync(string id)
         {
-            Order order = await _orderReadRepository.GetByIdAsync(id);
+            Order? order = await _orderReadRepository.Table.Include(o => o.Basket).ThenInclude(b => b.User)
+                .FirstOrDefaultAsync(o => o.Id == Guid.Parse(id));
             if(order != null)
             {
                 await _completedOrderWriteRepository.AddAsync(new CompletedOrder()
@@ -40,6 +41,15 @@ namespace E_CommerceAPI.Persistence.Services
                 });
 
                 _ = await _completedOrderWriteRepository.SaveAsync();
+
+                return new CompletedOrderDTO
+                {
+                    OrderCode = order.OrderCode,
+                    OrderDate = order.CreateDate,
+                    UserName = order.Basket.User.Name,
+                    UserSurname = order.Basket.User.Surname,
+                    Email= order.Basket.User.Email,
+                };
             }
             else
             {

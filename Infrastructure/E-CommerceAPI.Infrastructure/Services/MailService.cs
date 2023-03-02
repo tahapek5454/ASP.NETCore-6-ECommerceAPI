@@ -1,4 +1,5 @@
 ﻿using E_CommerceAPI.Application.Abstractions.Services;
+using E_CommerceAPI.Application.DTOs.Orders;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,18 @@ namespace E_CommerceAPI.Infrastructure.Services
         public MailService(IConfiguration configuration)
         {
             _configuration = configuration;
+        }
+
+        public async Task SendCompletedOrderMailAsync(CompletedOrderDTO completedOrderDTO)
+        {
+            string mail = $"Merhabalar <strong>{completedOrderDTO.UserName} {completedOrderDTO.UserSurname} </strong>. <br> " +
+                $"<strong> {completedOrderDTO.OrderDate} </strong> tarihinde vermis oldugunuz <strong> {completedOrderDTO.OrderCode} </strong> kodlu siparisiniz kargo firmasina verilmistir. <br>" +
+                $"Sizlere iyi gunler dileriz. <br>" +
+                $"<strong> ECommerce - created by Taha Pek </strong>";
+
+            await SendMessageAsync(completedOrderDTO.Email, $"{completedOrderDTO.OrderCode} | kodlu Siparis", mail);
+
+
         }
 
         public async Task SendMessageAsync(string[] tos, string subject, string body, bool isBodyHtml = true)
