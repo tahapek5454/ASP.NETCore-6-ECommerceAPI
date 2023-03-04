@@ -1,7 +1,9 @@
 ﻿using E_CommerceAPI.Application.Abstractions.Services;
+using E_CommerceAPI.Application.Abstractions.Services.Configurations;
 using E_CommerceAPI.Application.Abstractions.Storage;
 using E_CommerceAPI.Application.Abstractions.Tokens;
 using E_CommerceAPI.Application.Services;
+using E_CommerceAPI.Infrastructure.Configurations;
 using E_CommerceAPI.Infrastructure.Enums;
 using E_CommerceAPI.Infrastructure.Services;
 using E_CommerceAPI.Infrastructure.Services.Storage;
@@ -29,6 +31,8 @@ namespace E_CommerceAPI.Infrastructure
             serviceCollection.AddScoped<ITokenHandler, TokenHandler>();
 
             serviceCollection.AddScoped<IMailService, MailService>();
+
+            serviceCollection.AddScoped<IApplicationService, ApplicationService>();    
         }
 
         // Bu yapacagimiz islem biziim storage'ımızn tam anlamıyla ne olacagını program.cs den girilicek

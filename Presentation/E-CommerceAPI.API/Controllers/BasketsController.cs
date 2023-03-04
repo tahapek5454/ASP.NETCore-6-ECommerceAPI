@@ -1,4 +1,7 @@
-﻿using E_CommerceAPI.Application.Features.Commands.Baskets.AddItemToBasket;
+﻿using E_CommerceAPI.Application.Consts;
+using E_CommerceAPI.Application.CustomAttributes;
+using E_CommerceAPI.Application.Enums;
+using E_CommerceAPI.Application.Features.Commands.Baskets.AddItemToBasket;
 using E_CommerceAPI.Application.Features.Commands.Baskets.RemoveBasketItem;
 using E_CommerceAPI.Application.Features.Commands.Baskets.UpdateQuantity;
 using E_CommerceAPI.Application.Features.Queries.Baskets.GetBasketItems;
@@ -22,6 +25,7 @@ namespace E_CommerceAPI.API.Controllers
         }
 
         [HttpGet]
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Baskets, ActionType = ActionTypes.Reading, Definition = "Get Basket Items")]// bizim olusturdugumuz authorize
         public async Task<IActionResult> GetBasketItems([FromQuery]GetBasketItemQueryRequest getBasketItemQueryRequest)
         {
             // from query yapma seebimiz bos gondercez ya ody de deger bekleyip hataya sebep olmasin
@@ -32,6 +36,8 @@ namespace E_CommerceAPI.API.Controllers
         }
 
         [HttpPost]
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Baskets, ActionType = ActionTypes.Writing, Definition = "Add Items to Basket")]// bizim olusturdugumuz authorize
+
         public async Task<IActionResult> AddItemToBasket(AddItemToBasketCommandRequest addItemToBasketCommandRequest)
         {
             AddItemToBasketCommandResponse response = await _mediator.Send(addItemToBasketCommandRequest);
@@ -40,6 +46,8 @@ namespace E_CommerceAPI.API.Controllers
         }
 
         [HttpPut]
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Baskets, ActionType = ActionTypes.Updating, Definition = "Update Basket Items")]// bizim olusturdugumuz authorize
+
         public async Task<IActionResult> UpdateQuantity(UpdateQuantityCommandRequest updateQuantityCommandRequest)
         {
             UpdateQuantityCommandResponse response = await _mediator.Send(updateQuantityCommandRequest);
@@ -48,6 +56,7 @@ namespace E_CommerceAPI.API.Controllers
         }
 
         [HttpDelete("{BasketItemId}")]
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Baskets, ActionType = ActionTypes.Deleting, Definition = "Delete Basket Items")]// bizim olusturdugumuz authorize
         public async Task<IActionResult> RemoveBasketItem([FromRoute]RemoveBasketItemCommandRequest removeBasketItemCommandRequest)
         {
             RemoveBasketItemCommandResponse response = await _mediator.Send(removeBasketItemCommandRequest);
