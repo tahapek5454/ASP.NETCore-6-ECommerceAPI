@@ -27,6 +27,9 @@ namespace E_CommerceAPI.Persistence.Contexts
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }
 
+        public DbSet<Menu> Menus { get; set; }
+        public DbSet<Endpoint> Endpoints { get; set; }
+
         // Burda kalıtımdan geliyor ya tek bir tabloda gerekli ayrımlar yapılarak olusucak(Table Per Hierarchy)
         public DbSet<OwnFile> OwnFiles { get; set; }
         public DbSet<ProductImageFile> ProductImageFiles { get; set; }

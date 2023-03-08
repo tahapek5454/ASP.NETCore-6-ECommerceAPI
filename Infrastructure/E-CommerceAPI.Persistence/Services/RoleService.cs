@@ -35,8 +35,16 @@ namespace E_CommerceAPI.Persistence.Services
         public (object, int) GetAllRoles(int page, int size)
         {
             var count = _roleManager.Roles.Count();
-            var datas = _roleManager.Roles.Skip(page * size).Take(size).Select(r => new { r.Id, r.Name });
-            
+            var datasQuery = _roleManager.Roles;
+                 
+            if(page != -1 || size != -1)
+            {
+                datasQuery = datasQuery.Skip(page * size).Take(size);
+
+            }
+
+            var datas = datasQuery.Select(r => new { r.Id, r.Name });
+
             return (datas, count);
         }
 
