@@ -6,6 +6,7 @@ using E_CommerceAPI.Application.Helpers;
 using E_CommerceAPI.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,26 @@ namespace E_CommerceAPI.Persistence.Services
         public UserService(UserManager<AppUser> userManager)
         {
             _userManager = userManager;
+        }
+
+        public int TotaUsersCount => _userManager.Users.Count();
+
+        public async Task AssignRoleToUser(string userId, string[] roles)
+        {
+            AppUser user = await _userManager.FindByIdAsync(userId);
+
+            if(user != null) {
+
+                var userRoles = await _userManager.GetRolesAsync(user);
+
+                await _userManager.RemoveFromRolesAsync(user, userRoles);
+                await _userManager.AddToRolesAsync(user, roles);
+
+            }
+            else
+            {
+                throw new UserNotFoundException(UserNotFoundException.Message);
+            }
         }
 
         public async Task<CreateUserResponseDTO> CreateAsync(CreateUserDTO model)
@@ -56,6 +77,48 @@ namespace E_CommerceAPI.Persistence.Services
 
                 return response;
                 // throw new UserCreateFailedException(UserCreateFailedException.Message);
+            }
+        }
+
+        public async Task<List<ListUserDTO>> GetAllUsersAsync(int page, int size)
+        {
+            var query = _userManager.Users;
+            List<AppUser> users = null;
+
+            if(page !=-1 && size != -1)
+            {
+                users = await query.Skip(page * size).Take(size).ToListAsync();
+            }
+            else
+            {
+                users = await query.ToListAsync();
+            }
+
+            return users.Select(user => new ListUserDTO {
+            
+                Id = user.Id,
+                Email = user.Email,
+                Name = user.Name,
+                Surname = user.Surname,
+                TwoFactorEnabled = user.TwoFactorEnabled,
+                UserName = user.UserName,
+            
+            }).ToList();
+        }
+
+        public async Task<string[]> GetRolesToUserAsync(string id)
+        {
+            AppUser user = await _userManager.FindByIdAsync(id);
+
+            if(user != null)
+            {
+                var result = await _userManager.GetRolesAsync(user);
+
+                return result.ToArray();
+            }
+            else
+            {
+                throw new UserNotFoundException(UserNotFoundException.Message);
             }
         }
 
