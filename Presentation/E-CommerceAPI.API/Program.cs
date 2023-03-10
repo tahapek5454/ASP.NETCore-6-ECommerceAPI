@@ -1,5 +1,6 @@
 
 using E_CommerceAPI.API.Extensions;
+using E_CommerceAPI.API.Filters;
 using E_CommerceAPI.API.OwnConfigurations.ColumnWriters;
 using E_CommerceAPI.Application;
 using E_CommerceAPI.Application.Validators.Products;
@@ -81,7 +82,11 @@ builder.Services.AddHttpLogging(logging =>
 
 
 
-builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>()) // -> son olarak kendi filterýmýz tanýmlattýk
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ValidationFilter>();
+    options.Filters.Add<RolePermissionFilter>();
+}) // -> son olarak kendi filterýmýz tanýmlattýk
     .AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>()) // -> aslýnda validation için bu yeterli
     //contolleýmýza gelen verileri olustudgumuz validatorlar kontrol et diyoruz
     // kendisi reflection ile calisma aninda kontrol islemleri yapýyor .NetCore Gucu ->

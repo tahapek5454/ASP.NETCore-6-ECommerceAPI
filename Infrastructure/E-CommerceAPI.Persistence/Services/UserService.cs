@@ -3,6 +3,8 @@ using E_CommerceAPI.Application.DTOs.Users;
 using E_CommerceAPI.Application.Exceptions;
 using E_CommerceAPI.Application.Features.Commands.AppUsers.CreateUser;
 using E_CommerceAPI.Application.Helpers;
+using E_CommerceAPI.Application.Repositories.EndpointRepository;
+using E_CommerceAPI.Domain.Entities;
 using E_CommerceAPI.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -18,10 +20,12 @@ namespace E_CommerceAPI.Persistence.Services
     public class UserService : IUserService
     {
         private readonly UserManager<AppUser> _userManager;
+        private readonly IEndpointReadRepository _endpointReadRepository;
 
-        public UserService(UserManager<AppUser> userManager)
+        public UserService(UserManager<AppUser> userManager, IEndpointReadRepository endpointReadRepository)
         {
             _userManager = userManager;
+            _endpointReadRepository = endpointReadRepository;
         }
 
         public int TotaUsersCount => _userManager.Users.Count();
@@ -106,9 +110,11 @@ namespace E_CommerceAPI.Persistence.Services
             }).ToList();
         }
 
-        public async Task<string[]> GetRolesToUserAsync(string id)
+        public async Task<string[]> GetRolesToUserAsync(string idOrUserName)
         {
-            AppUser user = await _userManager.FindByIdAsync(id);
+            AppUser user = await _userManager.FindByIdAsync(idOrUserName);
+            if (user == null)
+                user = await _userManager.FindByNameAsync(idOrUserName);
 
             if(user != null)
             {
@@ -120,6 +126,47 @@ namespace E_CommerceAPI.Persistence.Services
             {
                 throw new UserNotFoundException(UserNotFoundException.Message);
             }
+        }
+
+        public async Task<bool> HasRolePermissionToEndpointAsync(string userName, string code)
+        {
+            string[] userRoles = await GetRolesToUserAsync(userName);
+
+            if (!userRoles.Any())
+            {
+                return false;
+            }
+
+            // bu userın rolleri var bakalim endpointin rolleriyle eslesen var mi
+
+            Endpoint? endpoint = _endpointReadRepository.Table.Include(e => e.Roles).FirstOrDefault(e => e.Code == code);
+            // ilgili code gore endpoint gelmediyse false
+            if(endpoint == null)
+            {
+                return false;
+            }
+
+            
+            var endpointRoles = endpoint.Roles.Select(r => r.Name).ToList();
+
+            foreach (var userRole in userRoles)
+            {
+                
+                foreach (var endpointRole in endpointRoles)
+                {
+                    if(endpointRole == userRole)
+                    {
+
+                        return true;
+                    }
+                }
+                
+              
+            }
+
+            return false;
+
+
         }
 
         public async Task UpdatePasswordAsync(string userId, string resetToken, string newPassword)
