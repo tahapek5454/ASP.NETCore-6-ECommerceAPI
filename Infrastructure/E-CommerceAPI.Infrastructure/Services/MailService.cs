@@ -25,7 +25,8 @@ namespace E_CommerceAPI.Infrastructure.Services
             string mail = $"Merhabalar <strong>{completedOrderDTO.UserName} {completedOrderDTO.UserSurname} </strong>. <br> " +
                 $"<strong> {completedOrderDTO.OrderDate} </strong> tarihinde vermis oldugunuz <strong> {completedOrderDTO.OrderCode} </strong> kodlu siparisiniz kargo firmasina verilmistir. <br>" +
                 $"Sizlere iyi gunler dileriz. <br>" +
-                $"<strong> ECommerce - created by Taha Pek </strong>";
+                $"<strong> ECommerce - created by Taha Pek </strong>" +
+                $"<strong> Egitim Amacli Yapilmis Bir Deneme Projesidir. Itibat Etmeyiniz. </strong>";
 
             await SendMessageAsync(completedOrderDTO.Email, $"{completedOrderDTO.OrderCode} | kodlu Siparis", mail);
 
